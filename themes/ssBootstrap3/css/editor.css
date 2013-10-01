@@ -1,0 +1,933 @@
+/*
+ * Editor
+ *
+ * This support file is used to style the WYSIWYG editor in the CMS
+ */
+/*
+ * Typography
+ */
+/* ==========================================================================
+   Imports
+   ========================================================================== */
+/*
+ * Custom Variables
+ *
+ * Override Variables with new values
+ */
+/* ==========================================================================
+   Encapsulate Bootstrap type.less styles in .typography wrapper for SS
+   ========================================================================== */
+.typography p {
+  margin: 0 0 10px;
+}
+.typography .lead {
+  margin-bottom: 20px;
+  font-size: 16.099999999999998px;
+  font-weight: 200;
+  line-height: 1.4;
+}
+@media (min-width: 768px) {
+  .typography .lead {
+    font-size: 21px;
+  }
+}
+.typography small {
+  font-size: 85%;
+}
+.typography cite {
+  font-style: normal;
+}
+.typography .text-muted {
+  color: #999999;
+}
+.typography .text-primary {
+  color: #428bca;
+}
+.typography .text-warning {
+  color: #c09853;
+}
+.typography .text-danger {
+  color: #b94a48;
+}
+.typography .text-success {
+  color: #468847;
+}
+.typography .text-info {
+  color: #3a87ad;
+}
+.typography .text-left {
+  text-align: left;
+}
+.typography .text-right {
+  text-align: right;
+}
+.typography .text-center {
+  text-align: center;
+}
+.typography h1,
+.typography h2,
+.typography h3,
+.typography h4,
+.typography h5,
+.typography h6,
+.typography .h1,
+.typography .h2,
+.typography .h3,
+.typography .h4,
+.typography .h5,
+.typography .h6 {
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: 500;
+  line-height: 1.1;
+}
+.typography h1 small,
+.typography h2 small,
+.typography h3 small,
+.typography h4 small,
+.typography h5 small,
+.typography h6 small,
+.typography .h1 small,
+.typography .h2 small,
+.typography .h3 small,
+.typography .h4 small,
+.typography .h5 small,
+.typography .h6 small {
+  font-weight: normal;
+  line-height: 1;
+  color: #999999;
+}
+.typography h1,
+.typography h2,
+.typography h3 {
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+.typography h4,
+.typography h5,
+.typography h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.typography h1,
+.typography .h1 {
+  font-size: 36px;
+}
+.typography h2,
+.typography .h2 {
+  font-size: 30px;
+}
+.typography h3,
+.typography .h3 {
+  font-size: 24px;
+}
+.typography h4,
+.typography .h4 {
+  font-size: 18px;
+}
+.typography h5,
+.typography .h5 {
+  font-size: 14px;
+}
+.typography h6,
+.typography .h6 {
+  font-size: 12px;
+}
+.typography h1 small,
+.typography .h1 small {
+  font-size: 24px;
+}
+.typography h2 small,
+.typography .h2 small {
+  font-size: 18px;
+}
+.typography h3 small,
+.typography .h3 small,
+.typography h4 small,
+.typography .h4 small {
+  font-size: 14px;
+}
+.typography .page-header {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+  border-bottom: 1px solid #eeeeee;
+}
+.typography ul,
+.typography ol {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+.typography ul ul,
+.typography ol ul,
+.typography ul ol,
+.typography ol ol {
+  margin-bottom: 0;
+}
+.typography .list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+.typography .list-inline {
+  padding-left: 0;
+  list-style: none;
+}
+.typography .list-inline > li {
+  display: inline-block;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+.typography dl {
+  margin-bottom: 20px;
+}
+.typography dt,
+.typography dd {
+  line-height: 1.428571429;
+}
+.typography dt {
+  font-weight: bold;
+}
+.typography dd {
+  margin-left: 0;
+}
+@media (min-width: 768px) {
+  .typography .dl-horizontal dt {
+    float: left;
+    width: 160px;
+    clear: left;
+    text-align: right;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  .typography .dl-horizontal dd {
+    margin-left: 180px;
+  }
+  .typography .dl-horizontal dd:before,
+  .typography .dl-horizontal dd:after {
+    content: " ";
+    /* 1 */
+  
+    display: table;
+    /* 2 */
+  
+  }
+  .typography .dl-horizontal dd:after {
+    clear: both;
+  }
+}
+.typography abbr[title],
+.typography abbr[data-original-title] {
+  cursor: help;
+  border-bottom: 1px dotted #999999;
+}
+.typography abbr.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+.typography blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  border-left: 5px solid #eeeeee;
+}
+.typography blockquote p {
+  font-size: 17.5px;
+  font-weight: 300;
+  line-height: 1.25;
+}
+.typography blockquote p:last-child {
+  margin-bottom: 0;
+}
+.typography blockquote small {
+  display: block;
+  line-height: 1.428571429;
+  color: #999999;
+}
+.typography blockquote small:before {
+  content: '\2014 \00A0';
+}
+.typography blockquote.pull-right {
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid #eeeeee;
+  border-left: 0;
+}
+.typography blockquote.pull-right p,
+.typography blockquote.pull-right small {
+  text-align: right;
+}
+.typography blockquote.pull-right small:before {
+  content: '';
+}
+.typography blockquote.pull-right small:after {
+  content: '\00A0 \2014';
+}
+.typography q:before,
+.typography q:after,
+.typography blockquote:before,
+.typography blockquote:after {
+  content: "";
+}
+.typography address {
+  display: block;
+  margin-bottom: 20px;
+  font-style: normal;
+  line-height: 1.428571429;
+}
+.typography code,
+.typography pre {
+  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+}
+.typography code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #c7254e;
+  background-color: #f9f2f4;
+  white-space: nowrap;
+  border-radius: 4px;
+}
+.typography pre {
+  display: block;
+  padding: 9.5px;
+  margin: 0 0 10px;
+  font-size: 13px;
+  line-height: 1.428571429;
+  word-break: break-all;
+  word-wrap: break-word;
+  color: #333333;
+  background-color: #f5f5f5;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+}
+.typography pre.prettyprint {
+  margin-bottom: 20px;
+}
+.typography pre code {
+  padding: 0;
+  font-size: inherit;
+  color: inherit;
+  white-space: pre-wrap;
+  background-color: transparent;
+  border: 0;
+}
+.typography .pre-scrollable {
+  max-height: 340px;
+  overflow-y: scroll;
+}
+@font-face {
+  font-family: 'Glyphicons Halflings';
+  src: url('../../../mysite/thirdparty/bower_components/fonts/glyphicons-halflings-regular.eot');
+  src: url('../../../mysite/thirdparty/bower_components/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../../mysite/thirdparty/bower_components/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../../mysite/thirdparty/bower_components/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../../mysite/thirdparty/bower_components/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+}
+.typography .glyphicon {
+  position: relative;
+  top: 1px;
+  display: inline-block;
+  font-family: 'Glyphicons Halflings';
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+}
+.typography .glyphicon-asterisk:before {
+  content: "\2a";
+}
+.typography .glyphicon-plus:before {
+  content: "\2b";
+}
+.typography .glyphicon-euro:before {
+  content: "\20ac";
+}
+.typography .glyphicon-minus:before {
+  content: "\2212";
+}
+.typography .glyphicon-cloud:before {
+  content: "\2601";
+}
+.typography .glyphicon-envelope:before {
+  content: "\2709";
+}
+.typography .glyphicon-pencil:before {
+  content: "\270f";
+}
+.typography .glyphicon-glass:before {
+  content: "\e001";
+}
+.typography .glyphicon-music:before {
+  content: "\e002";
+}
+.typography .glyphicon-search:before {
+  content: "\e003";
+}
+.typography .glyphicon-heart:before {
+  content: "\e005";
+}
+.typography .glyphicon-star:before {
+  content: "\e006";
+}
+.typography .glyphicon-star-empty:before {
+  content: "\e007";
+}
+.typography .glyphicon-user:before {
+  content: "\e008";
+}
+.typography .glyphicon-film:before {
+  content: "\e009";
+}
+.typography .glyphicon-th-large:before {
+  content: "\e010";
+}
+.typography .glyphicon-th:before {
+  content: "\e011";
+}
+.typography .glyphicon-th-list:before {
+  content: "\e012";
+}
+.typography .glyphicon-ok:before {
+  content: "\e013";
+}
+.typography .glyphicon-remove:before {
+  content: "\e014";
+}
+.typography .glyphicon-zoom-in:before {
+  content: "\e015";
+}
+.typography .glyphicon-zoom-out:before {
+  content: "\e016";
+}
+.typography .glyphicon-off:before {
+  content: "\e017";
+}
+.typography .glyphicon-signal:before {
+  content: "\e018";
+}
+.typography .glyphicon-cog:before {
+  content: "\e019";
+}
+.typography .glyphicon-trash:before {
+  content: "\e020";
+}
+.typography .glyphicon-home:before {
+  content: "\e021";
+}
+.typography .glyphicon-file:before {
+  content: "\e022";
+}
+.typography .glyphicon-time:before {
+  content: "\e023";
+}
+.typography .glyphicon-road:before {
+  content: "\e024";
+}
+.typography .glyphicon-download-alt:before {
+  content: "\e025";
+}
+.typography .glyphicon-download:before {
+  content: "\e026";
+}
+.typography .glyphicon-upload:before {
+  content: "\e027";
+}
+.typography .glyphicon-inbox:before {
+  content: "\e028";
+}
+.typography .glyphicon-play-circle:before {
+  content: "\e029";
+}
+.typography .glyphicon-repeat:before {
+  content: "\e030";
+}
+.typography .glyphicon-refresh:before {
+  content: "\e031";
+}
+.typography .glyphicon-list-alt:before {
+  content: "\e032";
+}
+.typography .glyphicon-flag:before {
+  content: "\e034";
+}
+.typography .glyphicon-headphones:before {
+  content: "\e035";
+}
+.typography .glyphicon-volume-off:before {
+  content: "\e036";
+}
+.typography .glyphicon-volume-down:before {
+  content: "\e037";
+}
+.typography .glyphicon-volume-up:before {
+  content: "\e038";
+}
+.typography .glyphicon-qrcode:before {
+  content: "\e039";
+}
+.typography .glyphicon-barcode:before {
+  content: "\e040";
+}
+.typography .glyphicon-tag:before {
+  content: "\e041";
+}
+.typography .glyphicon-tags:before {
+  content: "\e042";
+}
+.typography .glyphicon-book:before {
+  content: "\e043";
+}
+.typography .glyphicon-print:before {
+  content: "\e045";
+}
+.typography .glyphicon-font:before {
+  content: "\e047";
+}
+.typography .glyphicon-bold:before {
+  content: "\e048";
+}
+.typography .glyphicon-italic:before {
+  content: "\e049";
+}
+.typography .glyphicon-text-height:before {
+  content: "\e050";
+}
+.typography .glyphicon-text-width:before {
+  content: "\e051";
+}
+.typography .glyphicon-align-left:before {
+  content: "\e052";
+}
+.typography .glyphicon-align-center:before {
+  content: "\e053";
+}
+.typography .glyphicon-align-right:before {
+  content: "\e054";
+}
+.typography .glyphicon-align-justify:before {
+  content: "\e055";
+}
+.typography .glyphicon-list:before {
+  content: "\e056";
+}
+.typography .glyphicon-indent-left:before {
+  content: "\e057";
+}
+.typography .glyphicon-indent-right:before {
+  content: "\e058";
+}
+.typography .glyphicon-facetime-video:before {
+  content: "\e059";
+}
+.typography .glyphicon-picture:before {
+  content: "\e060";
+}
+.typography .glyphicon-map-marker:before {
+  content: "\e062";
+}
+.typography .glyphicon-adjust:before {
+  content: "\e063";
+}
+.typography .glyphicon-tint:before {
+  content: "\e064";
+}
+.typography .glyphicon-edit:before {
+  content: "\e065";
+}
+.typography .glyphicon-share:before {
+  content: "\e066";
+}
+.typography .glyphicon-check:before {
+  content: "\e067";
+}
+.typography .glyphicon-move:before {
+  content: "\e068";
+}
+.typography .glyphicon-step-backward:before {
+  content: "\e069";
+}
+.typography .glyphicon-fast-backward:before {
+  content: "\e070";
+}
+.typography .glyphicon-backward:before {
+  content: "\e071";
+}
+.typography .glyphicon-play:before {
+  content: "\e072";
+}
+.typography .glyphicon-pause:before {
+  content: "\e073";
+}
+.typography .glyphicon-stop:before {
+  content: "\e074";
+}
+.typography .glyphicon-forward:before {
+  content: "\e075";
+}
+.typography .glyphicon-fast-forward:before {
+  content: "\e076";
+}
+.typography .glyphicon-step-forward:before {
+  content: "\e077";
+}
+.typography .glyphicon-eject:before {
+  content: "\e078";
+}
+.typography .glyphicon-chevron-left:before {
+  content: "\e079";
+}
+.typography .glyphicon-chevron-right:before {
+  content: "\e080";
+}
+.typography .glyphicon-plus-sign:before {
+  content: "\e081";
+}
+.typography .glyphicon-minus-sign:before {
+  content: "\e082";
+}
+.typography .glyphicon-remove-sign:before {
+  content: "\e083";
+}
+.typography .glyphicon-ok-sign:before {
+  content: "\e084";
+}
+.typography .glyphicon-question-sign:before {
+  content: "\e085";
+}
+.typography .glyphicon-info-sign:before {
+  content: "\e086";
+}
+.typography .glyphicon-screenshot:before {
+  content: "\e087";
+}
+.typography .glyphicon-remove-circle:before {
+  content: "\e088";
+}
+.typography .glyphicon-ok-circle:before {
+  content: "\e089";
+}
+.typography .glyphicon-ban-circle:before {
+  content: "\e090";
+}
+.typography .glyphicon-arrow-left:before {
+  content: "\e091";
+}
+.typography .glyphicon-arrow-right:before {
+  content: "\e092";
+}
+.typography .glyphicon-arrow-up:before {
+  content: "\e093";
+}
+.typography .glyphicon-arrow-down:before {
+  content: "\e094";
+}
+.typography .glyphicon-share-alt:before {
+  content: "\e095";
+}
+.typography .glyphicon-resize-full:before {
+  content: "\e096";
+}
+.typography .glyphicon-resize-small:before {
+  content: "\e097";
+}
+.typography .glyphicon-exclamation-sign:before {
+  content: "\e101";
+}
+.typography .glyphicon-gift:before {
+  content: "\e102";
+}
+.typography .glyphicon-leaf:before {
+  content: "\e103";
+}
+.typography .glyphicon-eye-open:before {
+  content: "\e105";
+}
+.typography .glyphicon-eye-close:before {
+  content: "\e106";
+}
+.typography .glyphicon-warning-sign:before {
+  content: "\e107";
+}
+.typography .glyphicon-plane:before {
+  content: "\e108";
+}
+.typography .glyphicon-random:before {
+  content: "\e110";
+}
+.typography .glyphicon-comment:before {
+  content: "\e111";
+}
+.typography .glyphicon-magnet:before {
+  content: "\e112";
+}
+.typography .glyphicon-chevron-up:before {
+  content: "\e113";
+}
+.typography .glyphicon-chevron-down:before {
+  content: "\e114";
+}
+.typography .glyphicon-retweet:before {
+  content: "\e115";
+}
+.typography .glyphicon-shopping-cart:before {
+  content: "\e116";
+}
+.typography .glyphicon-folder-close:before {
+  content: "\e117";
+}
+.typography .glyphicon-folder-open:before {
+  content: "\e118";
+}
+.typography .glyphicon-resize-vertical:before {
+  content: "\e119";
+}
+.typography .glyphicon-resize-horizontal:before {
+  content: "\e120";
+}
+.typography .glyphicon-hdd:before {
+  content: "\e121";
+}
+.typography .glyphicon-bullhorn:before {
+  content: "\e122";
+}
+.typography .glyphicon-certificate:before {
+  content: "\e124";
+}
+.typography .glyphicon-thumbs-up:before {
+  content: "\e125";
+}
+.typography .glyphicon-thumbs-down:before {
+  content: "\e126";
+}
+.typography .glyphicon-hand-right:before {
+  content: "\e127";
+}
+.typography .glyphicon-hand-left:before {
+  content: "\e128";
+}
+.typography .glyphicon-hand-up:before {
+  content: "\e129";
+}
+.typography .glyphicon-hand-down:before {
+  content: "\e130";
+}
+.typography .glyphicon-circle-arrow-right:before {
+  content: "\e131";
+}
+.typography .glyphicon-circle-arrow-left:before {
+  content: "\e132";
+}
+.typography .glyphicon-circle-arrow-up:before {
+  content: "\e133";
+}
+.typography .glyphicon-circle-arrow-down:before {
+  content: "\e134";
+}
+.typography .glyphicon-globe:before {
+  content: "\e135";
+}
+.typography .glyphicon-tasks:before {
+  content: "\e137";
+}
+.typography .glyphicon-filter:before {
+  content: "\e138";
+}
+.typography .glyphicon-fullscreen:before {
+  content: "\e140";
+}
+.typography .glyphicon-dashboard:before {
+  content: "\e141";
+}
+.typography .glyphicon-heart-empty:before {
+  content: "\e143";
+}
+.typography .glyphicon-link:before {
+  content: "\e144";
+}
+.typography .glyphicon-phone:before {
+  content: "\e145";
+}
+.typography .glyphicon-usd:before {
+  content: "\e148";
+}
+.typography .glyphicon-gbp:before {
+  content: "\e149";
+}
+.typography .glyphicon-sort:before {
+  content: "\e150";
+}
+.typography .glyphicon-sort-by-alphabet:before {
+  content: "\e151";
+}
+.typography .glyphicon-sort-by-alphabet-alt:before {
+  content: "\e152";
+}
+.typography .glyphicon-sort-by-order:before {
+  content: "\e153";
+}
+.typography .glyphicon-sort-by-order-alt:before {
+  content: "\e154";
+}
+.typography .glyphicon-sort-by-attributes:before {
+  content: "\e155";
+}
+.typography .glyphicon-sort-by-attributes-alt:before {
+  content: "\e156";
+}
+.typography .glyphicon-unchecked:before {
+  content: "\e157";
+}
+.typography .glyphicon-expand:before {
+  content: "\e158";
+}
+.typography .glyphicon-collapse-down:before {
+  content: "\e159";
+}
+.typography .glyphicon-collapse-up:before {
+  content: "\e160";
+}
+.typography .glyphicon-log-in:before {
+  content: "\e161";
+}
+.typography .glyphicon-flash:before {
+  content: "\e162";
+}
+.typography .glyphicon-log-out:before {
+  content: "\e163";
+}
+.typography .glyphicon-new-window:before {
+  content: "\e164";
+}
+.typography .glyphicon-record:before {
+  content: "\e165";
+}
+.typography .glyphicon-save:before {
+  content: "\e166";
+}
+.typography .glyphicon-open:before {
+  content: "\e167";
+}
+.typography .glyphicon-saved:before {
+  content: "\e168";
+}
+.typography .glyphicon-import:before {
+  content: "\e169";
+}
+.typography .glyphicon-export:before {
+  content: "\e170";
+}
+.typography .glyphicon-send:before {
+  content: "\e171";
+}
+.typography .glyphicon-floppy-disk:before {
+  content: "\e172";
+}
+.typography .glyphicon-floppy-saved:before {
+  content: "\e173";
+}
+.typography .glyphicon-floppy-remove:before {
+  content: "\e174";
+}
+.typography .glyphicon-floppy-save:before {
+  content: "\e175";
+}
+.typography .glyphicon-floppy-open:before {
+  content: "\e176";
+}
+.typography .glyphicon-credit-card:before {
+  content: "\e177";
+}
+.typography .glyphicon-transfer:before {
+  content: "\e178";
+}
+.typography .glyphicon-cutlery:before {
+  content: "\e179";
+}
+.typography .glyphicon-header:before {
+  content: "\e180";
+}
+.typography .glyphicon-compressed:before {
+  content: "\e181";
+}
+.typography .glyphicon-earphone:before {
+  content: "\e182";
+}
+.typography .glyphicon-phone-alt:before {
+  content: "\e183";
+}
+.typography .glyphicon-tower:before {
+  content: "\e184";
+}
+.typography .glyphicon-stats:before {
+  content: "\e185";
+}
+.typography .glyphicon-sd-video:before {
+  content: "\e186";
+}
+.typography .glyphicon-hd-video:before {
+  content: "\e187";
+}
+.typography .glyphicon-subtitles:before {
+  content: "\e188";
+}
+.typography .glyphicon-sound-stereo:before {
+  content: "\e189";
+}
+.typography .glyphicon-sound-dolby:before {
+  content: "\e190";
+}
+.typography .glyphicon-sound-5-1:before {
+  content: "\e191";
+}
+.typography .glyphicon-sound-6-1:before {
+  content: "\e192";
+}
+.typography .glyphicon-sound-7-1:before {
+  content: "\e193";
+}
+.typography .glyphicon-copyright-mark:before {
+  content: "\e194";
+}
+.typography .glyphicon-registration-mark:before {
+  content: "\e195";
+}
+.typography .glyphicon-cloud-download:before {
+  content: "\e197";
+}
+.typography .glyphicon-cloud-upload:before {
+  content: "\e198";
+}
+.typography .glyphicon-tree-conifer:before {
+  content: "\e199";
+}
+.typography .glyphicon-tree-deciduous:before {
+  content: "\e200";
+}
+.typography .glyphicon-briefcase:before {
+  content: "\1f4bc";
+}
+.typography .glyphicon-calendar:before {
+  content: "\1f4c5";
+}
+.typography .glyphicon-pushpin:before {
+  content: "\1f4cc";
+}
+.typography .glyphicon-paperclip:before {
+  content: "\1f4ce";
+}
+.typography .glyphicon-camera:before {
+  content: "\1f4f7";
+}
+.typography .glyphicon-lock:before {
+  content: "\1f512";
+}
+.typography .glyphicon-bell:before {
+  content: "\1f514";
+}
+.typography .glyphicon-bookmark:before {
+  content: "\1f516";
+}
+.typography .glyphicon-fire:before {
+  content: "\1f525";
+}
+.typography .glyphicon-wrench:before {
+  content: "\1f527";
+}
+body.mceContentBody {
+  padding: 20px;
+  font-size: 14px;
+}

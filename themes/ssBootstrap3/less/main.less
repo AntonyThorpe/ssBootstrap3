@@ -1,0 +1,293 @@
+/*
+ * Main
+ *
+ * This file contains additions/overrides for the Bootstrap css
+ * and supplementary styles for the SS3 blog and comments module
+ */
+
+/* ==========================================================================
+   Imports
+   ========================================================================== */
+
+// Core variables and mixins
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/variables.less";
+@import "customVariables.less";
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/mixins.less";
+
+// Reset
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/normalize.less";
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/print.less";
+
+// Core CSS
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/scaffolding.less";
+// @import "type.less"; - in typography.less
+// @import "code.less"; - in typography.less
+// @import "grid.less"; - in layout.less
+// @import "tables.less"; - in layout.less
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/forms.less"; // also used in forms.less
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/buttons.less"; // also used in forms.less
+
+
+// Components
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/component-animations.less";
+// @import "glyphicons.less"; in typography.less
+// @import "dropdowns.less"; - in forms.less
+// @import "button-groups.less"; - in forms.less
+// @import "../../../mysite/thirdparty/bower_components/bootstrap/less/input-groups.less"; in forms.less
+
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/navs.less";
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/navbar.less";
+
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/breadcrumbs.less";
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/pagination.less";
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/pager.less";
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/labels.less";
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/badges.less";
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/jumbotron.less";
+
+// problems
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/thumbnails.less";
+
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/alerts.less";
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/progress-bars.less";
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/media.less";
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/list-group.less";
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/panels.less";
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/wells.less";
+// @import "../../../mysite/thirdparty/bower_components/bootstrap/less/close.less"; in forms.less
+
+
+// Components w/ JavaScript
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/modals.less";
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/tooltip.less";
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/popovers.less";
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/carousel.less";
+
+// Utility classes
+@import "../../../mysite/thirdparty/bower_components/bootstrap/less/utilities.less";
+// @import "responsive-utilities.less"; - in layout.less
+
+
+
+/* ==========================================================================
+   Navbar - extending Bootstrap's default styling for SS
+   ========================================================================== */
+
+// Active nav items
+.navbar .nav > .current > a,
+.navbar .nav > .current > a:hover,
+.navbar .nav > .current > a:focus {
+    color: @navbar-default-link-color;
+    text-decoration: none;
+    background-color: @navbar-default-link-active-color;
+    .box-shadow(inset 0 3px 8px rgba(0,0,0,.125));
+}
+
+// Inverted navbar
+.navbar-inverse {
+    .nav .current > a,
+    .nav .current > a:hover,
+    .nav .current > a:focus {
+        color: @navbar-inverse-link-active-color;
+        background-color: @navbar-inverse-link-active-bg;
+    }
+}
+
+// Search
+#SearchForm_SearchForm {
+    input[type="text"] {
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+    input[type="submit"] {
+        padding: 5px 12px;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+
+/* ==========================================================================
+   Navs
+   ========================================================================== */
+
+// Redeclaring due to specificity issues
+.nav-group {
+    margin-bottom: 0 !important;
+    margin-left: 0 !important;
+    padding-left: 15px !important;
+    padding-right: 15px !important;
+}
+
+/* ==========================================================================
+   Breadcrumbs
+   ========================================================================== */
+
+// Redeclaring due to specificity issues
+.breadcrumb {
+    padding: 8px 15px !important;
+    margin: 0 0 @line-height-base !important;
+    margin-left: 0 !important;
+}
+
+/*
+@media (min-width: 768px) and (max-width: 979px) {
+    .breadcrumb { margin-left: @line-height-base !important; }
+}
+@media (min-width: 1200px) {
+    .breadcrumb { margin-left: @line-height-base * 1.5 !important; }
+} */
+
+
+/* Lists
+   ========================================================================== */
+
+// Unordered and Ordered lists
+li {
+  list-style: none;
+}
+
+
+/* ==========================================================================
+   Contact us form
+   ========================================================================== */
+
+#contact-us {
+    form[id^="Form_"] {
+        input[type="text"],
+        input[type="email"],
+        textarea { .input-lg; }
+    }
+}
+
+/* ==========================================================================
+   Silverstripe blog module
+   ========================================================================== */
+
+/* Blog holder
+   ========================================================================== */
+
+/* Layout */
+.blogSummary { margin-bottom: @line-height-base * 1.5; }
+
+/* Blog entry
+   ========================================================================== */
+
+/* Layout */
+.blogEntry { margin-bottom: @line-height-base * 1.5; }
+.edit-post {
+    padding-top: 0;
+    margin-bottom: @line-height-base * 1.5 !important;
+}
+
+/* Meta */
+.authorDate { margin-bottom: 0 !important; }
+.tags { margin-bottom: @line-height-base !important; }
+
+/* Tag cloud widget */
+.tagcloud {
+    .not-popular { font-size: @font-size-base * 0.6; }
+    .not-very-popular { font-size: @font-size-base * 0.8; }
+    .somewhat-popular { font-size: @font-size-base; }
+    .popular { font-size: @font-size-base * 1.2; }
+    .very-popular { font-size: @font-size-base * 1.4; }
+    .ultra-popular { font-size: @font-size-base * 1.6; }
+}
+
+/* Buttons */
+.edit-post,
+.commenting-rss-feed {
+    a {
+        .btn;
+        .btn-default;
+        .btn-sm;
+        &#editpost { .btn-primary; }
+        &#unpublishpost { .btn-danger; }
+    }
+}
+
+/* Comments module
+   ========================================================================== */
+
+/* Typography */
+#comments-holder {
+    h4 {
+        margin-bottom: @line-height-base;
+        font-size: @font-size-base * 1.75;
+    }
+}
+
+/* Form */
+#Form_CommentsForm {
+    margin-bottom: @line-height-base * 1.5;
+    input[type="text"],
+    input[type="email"],
+    textarea { .input-lg; }
+}
+
+/* Comments */
+.comments-list {
+    margin-left: 0 !important;
+    list-style: none;
+    li { margin-bottom: @line-height-base * 1.5; }
+    .action-links {
+        margin-left: 0 !important;
+        list-style: none;
+        li {
+            display: inline-block;
+            margin-bottom: 0 !important;
+            a {
+                .btn;
+                .btn-default;
+                .btn-sm;
+                &.spam { .btn-warning; }
+                &.delete { .btn-danger; }
+            }
+        }
+    }
+}
+
+/* Widgets
+   ========================================================================== */
+
+.WidgetHolder {
+    margin-bottom: @line-height-base;
+    ul {
+        margin-left: 0;
+        list-style: none;
+    }
+}
+
+.subscribeLink { .btn; .btn-default }
+
+/* Labels and badges
+   ========================================================================== */
+
+a[rel="tag"] {
+    .label;
+    background-color: @state-info-text;
+}
+
+
+/* Labels and badges
+   ========================================================================== */
+#bg {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+#bg img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
+  max-width: 940 px;
+  max-height: 317 px;
+}
+
+

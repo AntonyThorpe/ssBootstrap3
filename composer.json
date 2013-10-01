@@ -1,0 +1,15 @@
+{
+	"name": "ssBootstrap3",
+	"description": "Bootstrap 3 / HTML5 Boilerplate theme for Silverstripe 3 (with Less for CSS and Bower for library updates)",
+	"type": "silverstripe-theme",
+	"keywords": ["silverstripe", "theme", "bootstrap", "3", "boilerplate", "Less", "Bower"],
+	"stability": "dev",
+	"license": "'as is' - have fun! [Bootstrap](https://github.com/twbs/bootstrap/blob/master/LICENSE) and [Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/master/LICENSE.md) have their own licenses.",
+	"authors": [{
+		"name": "Antony Thorpe"
+	}],
+	"require": {
+		"composer/installers": "*",
+		"silverstripe/framework": ">=3.0"
+	}
+}
