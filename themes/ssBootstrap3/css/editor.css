@@ -12,7 +12,7 @@
 /*
  * Custom Variables
  *
- * Override Variables with new values
+ * Override Bootstrap Variables with new values
  */
 /* ==========================================================================
    Encapsulate Bootstrap type.less styles in .typography wrapper for SS
@@ -314,8 +314,8 @@
 }
 @font-face {
   font-family: 'Glyphicons Halflings';
-  src: url('../../../mysite/thirdparty/bower_components/fonts/glyphicons-halflings-regular.eot');
-  src: url('../../../mysite/thirdparty/bower_components/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../../mysite/thirdparty/bower_components/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../../mysite/thirdparty/bower_components/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../../mysite/thirdparty/bower_components/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+  src: url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot');
+  src: url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
 }
 .typography .glyphicon {
   position: relative;

@@ -17,7 +17,7 @@ Originated from [ss-bootstrap] theme (https://github.com/gpmd/ss-bootstrap) - st
 ## Instructions
 
 1. Download and copy the `ssBootstrap3` folder, under themes, into your `themes` folder
-2. Add `SSViewer::set_theme('ssBootstrap3');` to your `_config.php` file
+2. Set `theme: 'ssBootstrap3'` in your `config.yml` file
 3. Open `mysite/Page.php` and add
 ```php
 	$theme = SSViewer::current_theme();
@@ -57,13 +57,13 @@ Originated from [ss-bootstrap] theme (https://github.com/gpmd/ss-bootstrap) - st
 5. Run `/dev/build`.
 6. Optional
  * Enable search in config `FulltextSearchable::enable();`
- * For older browsers include html5shiv.js to support HTML5 elements or respond.min.js for media queries (folder: `mysite/thirdparty/bower_components/bootstrap/assets/js/`).  
+ * For older browsers include html5shiv.js to support HTML5 elements and/or respond.min.js for media queries (folder: `mysite/thirdparty/bower_components/bootstrap/assets/js/`).  
 
 
 ## Requirements
 Use software to convert Less to CSS e.g. LiveReload or https://github.com/axllent/silverstripe-less or you could use javascript (see lesscss.org. Less.js is in the folder `mysite/thirdparty/bower_components/bootstrap/assets/js/`).  
 
-Bootstrap's Less files are located under the theme's `less` folder.  Target the `css` folder in your Less compiler. 
+Bootstrap's Less files are located under the theme's `less` folder.  Target the `css` folder in your Less compiler.
 
 
 ## Structure of the Less files
@@ -79,7 +79,7 @@ Bootstrap's base variables impart at the start of each Less file.  These are ove
 			"name": "yourProjectName",
 			"version": "0.0.0",
 			"dependencies": {
-				"bootstrap": "3.0.0"
+				"bootstrap": ">= 3.0.0" 
 			}
 		}
 
@@ -87,11 +87,10 @@ Bootstrap's base variables impart at the start of each Less file.  These are ove
 
 
 ## ToDo
-* Double check the Less files as these were quickly upgraded to Bootstrap 3. 
-* There's probably a better way to reference a file location in the Less files - `@import "../../../mysite/thirdparty/bower_components/bootstrap/less/variables.less";`
-* Having trouble with the Blog Module branch 0.6 (for 3.0.0 - 3.0.*).  It is not playing nice.
-* Test with Silverstripe 3.1.
-* Link to a demo site.
+* Double check the Less files as these were quickly upgraded to Bootstrap 3.0 
+* There's probably a better way to reference a file location in the Less files than `@import "../../../mysite/thirdparty/bower_components/bootstrap/less/variables.less";`
+* Having trouble with the Blog Module
+* Link to a demo site
 
 
 ## Browser Support
