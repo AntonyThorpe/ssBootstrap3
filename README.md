@@ -99,6 +99,7 @@ Does not support ie7.
 
 ## Changelog
 * Version 0.1 - First release
+* Version 0.2 - upgrade to 3.1
 
 ## License
 Provided 'as is' - have fun! [Bootstrap](https://github.com/twbs/bootstrap/blob/master/LICENSE) and [Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/master/LICENSE.md) have their own licenses.
