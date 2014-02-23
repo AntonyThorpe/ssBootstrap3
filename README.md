@@ -61,7 +61,7 @@ Originated from [ss-bootstrap] theme (https://github.com/gpmd/ss-bootstrap) - st
 
 
 ## Requirements
-Use software to convert Less to CSS e.g. LiveReload or https://github.com/axllent/silverstripe-less or you could use javascript (see lesscss.org. Less.js is in the folder `mysite/thirdparty/bower_components/bootstrap/assets/js/`).  
+Use software to convert Less to CSS e.g. LiveReload (latest version) or https://github.com/axllent/silverstripe-less or you could use javascript (see lesscss.org. Less.js is in the folder `mysite/thirdparty/bower_components/bootstrap/assets/js/`).  
 
 Bootstrap's Less files are located under the theme's `less` folder.  Target the `css` folder in your Less compiler.
 
@@ -99,7 +99,8 @@ Does not support ie7.
 
 ## Changelog
 * Version 0.1 - First release
-* Version 0.2 - upgrade to 3.1
+* Version 0.2 - upgrade to SS 3.1
+* Version 0.3 - upgraded Bootstrap to 3.1.1
 
 ## License
 Provided 'as is' - have fun! [Bootstrap](https://github.com/twbs/bootstrap/blob/master/LICENSE) and [Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/master/LICENSE.md) have their own licenses.

@@ -17,53 +17,6 @@
 /* ==========================================================================
    Encapsulate Bootstrap type.less styles in .typography wrapper for SS
    ========================================================================== */
-.typography p {
-  margin: 0 0 10px;
-}
-.typography .lead {
-  margin-bottom: 20px;
-  font-size: 16.099999999999998px;
-  font-weight: 200;
-  line-height: 1.4;
-}
-@media (min-width: 768px) {
-  .typography .lead {
-    font-size: 21px;
-  }
-}
-.typography small {
-  font-size: 85%;
-}
-.typography cite {
-  font-style: normal;
-}
-.typography .text-muted {
-  color: #999999;
-}
-.typography .text-primary {
-  color: #428bca;
-}
-.typography .text-warning {
-  color: #c09853;
-}
-.typography .text-danger {
-  color: #b94a48;
-}
-.typography .text-success {
-  color: #468847;
-}
-.typography .text-info {
-  color: #3a87ad;
-}
-.typography .text-left {
-  text-align: left;
-}
-.typography .text-right {
-  text-align: right;
-}
-.typography .text-center {
-  text-align: center;
-}
 .typography h1,
 .typography h2,
 .typography h3,
@@ -76,9 +29,10 @@
 .typography .h4,
 .typography .h5,
 .typography .h6 {
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: inherit;
   font-weight: 500;
   line-height: 1.1;
+  color: inherit;
 }
 .typography h1 small,
 .typography h2 small,
@@ -91,22 +45,68 @@
 .typography .h3 small,
 .typography .h4 small,
 .typography .h5 small,
-.typography .h6 small {
+.typography .h6 small,
+.typography h1 .small,
+.typography h2 .small,
+.typography h3 .small,
+.typography h4 .small,
+.typography h5 .small,
+.typography h6 .small,
+.typography .h1 .small,
+.typography .h2 .small,
+.typography .h3 .small,
+.typography .h4 .small,
+.typography .h5 .small,
+.typography .h6 .small {
   font-weight: normal;
   line-height: 1;
   color: #999999;
 }
 .typography h1,
+.typography .h1,
 .typography h2,
-.typography h3 {
+.typography .h2,
+.typography h3,
+.typography .h3 {
   margin-top: 20px;
   margin-bottom: 10px;
 }
+.typography h1 small,
+.typography .h1 small,
+.typography h2 small,
+.typography .h2 small,
+.typography h3 small,
+.typography .h3 small,
+.typography h1 .small,
+.typography .h1 .small,
+.typography h2 .small,
+.typography .h2 .small,
+.typography h3 .small,
+.typography .h3 .small {
+  font-size: 65%;
+}
 .typography h4,
+.typography .h4,
 .typography h5,
-.typography h6 {
+.typography .h5,
+.typography h6,
+.typography .h6 {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+.typography h4 small,
+.typography .h4 small,
+.typography h5 small,
+.typography .h5 small,
+.typography h6 small,
+.typography .h6 small,
+.typography h4 .small,
+.typography .h4 .small,
+.typography h5 .small,
+.typography .h5 .small,
+.typography h6 .small,
+.typography .h6 .small {
+  font-size: 75%;
 }
 .typography h1,
 .typography .h1 {
@@ -132,19 +132,102 @@
 .typography .h6 {
   font-size: 12px;
 }
-.typography h1 small,
-.typography .h1 small {
-  font-size: 24px;
+.typography p {
+  margin: 0 0 10px;
 }
-.typography h2 small,
-.typography .h2 small {
-  font-size: 18px;
+.typography .lead {
+  margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 200;
+  line-height: 1.4;
 }
-.typography h3 small,
-.typography .h3 small,
-.typography h4 small,
-.typography .h4 small {
-  font-size: 14px;
+@media (min-width: 768px) {
+  .typography .lead {
+    font-size: 21px;
+  }
+}
+.typography small,
+.typography .small {
+  font-size: 85%;
+}
+.typography cite {
+  font-style: normal;
+}
+.typography .text-left {
+  text-align: left;
+}
+.typography .text-right {
+  text-align: right;
+}
+.typography .text-center {
+  text-align: center;
+}
+.typography .text-justify {
+  text-align: justify;
+}
+.typography .text-muted {
+  color: #999999;
+}
+.typography .text-primary {
+  color: #428bca;
+}
+a.typography .text-primary:hover {
+  color: #3071a9;
+}
+.typography .text-success {
+  color: #3c763d;
+}
+a.typography .text-success:hover {
+  color: #2b542c;
+}
+.typography .text-info {
+  color: #31708f;
+}
+a.typography .text-info:hover {
+  color: #245269;
+}
+.typography .text-warning {
+  color: #8a6d3b;
+}
+a.typography .text-warning:hover {
+  color: #66512c;
+}
+.typography .text-danger {
+  color: #a94442;
+}
+a.typography .text-danger:hover {
+  color: #843534;
+}
+.typography .bg-primary {
+  color: #fff;
+  background-color: #428bca;
+}
+a.typography .bg-primary:hover {
+  background-color: #3071a9;
+}
+.typography .bg-success {
+  background-color: #dff0d8;
+}
+a.typography .bg-success:hover {
+  background-color: #c1e2b3;
+}
+.typography .bg-info {
+  background-color: #d9edf7;
+}
+a.typography .bg-info:hover {
+  background-color: #afd9ee;
+}
+.typography .bg-warning {
+  background-color: #fcf8e3;
+}
+a.typography .bg-warning:hover {
+  background-color: #f7ecb5;
+}
+.typography .bg-danger {
+  background-color: #f2dede;
+}
+a.typography .bg-danger:hover {
+  background-color: #e4b9b9;
 }
 .typography .page-header {
   padding-bottom: 9px;
@@ -169,6 +252,7 @@
 .typography .list-inline {
   padding-left: 0;
   list-style: none;
+  margin-left: -5px;
 }
 .typography .list-inline > li {
   display: inline-block;
@@ -176,6 +260,7 @@
   padding-right: 5px;
 }
 .typography dl {
+  margin-top: 0;
   margin-bottom: 20px;
 }
 .typography dt,
@@ -201,80 +286,78 @@
   .typography .dl-horizontal dd {
     margin-left: 180px;
   }
-  .typography .dl-horizontal dd:before,
-  .typography .dl-horizontal dd:after {
-    content: " ";
-    /* 1 */
-  
-    display: table;
-    /* 2 */
-  
-  }
-  .typography .dl-horizontal dd:after {
-    clear: both;
-  }
 }
 .typography abbr[title],
 .typography abbr[data-original-title] {
   cursor: help;
   border-bottom: 1px dotted #999999;
 }
-.typography abbr.initialism {
+.typography .initialism {
   font-size: 90%;
   text-transform: uppercase;
 }
 .typography blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
+  font-size: 17.5px;
   border-left: 5px solid #eeeeee;
 }
-.typography blockquote p {
-  font-size: 17.5px;
-  font-weight: 300;
-  line-height: 1.25;
-}
-.typography blockquote p:last-child {
+.typography blockquote p:last-child,
+.typography blockquote ul:last-child,
+.typography blockquote ol:last-child {
   margin-bottom: 0;
 }
-.typography blockquote small {
+.typography blockquote footer,
+.typography blockquote small,
+.typography blockquote .small {
   display: block;
+  font-size: 80%;
   line-height: 1.428571429;
   color: #999999;
 }
-.typography blockquote small:before {
+.typography blockquote footer:before,
+.typography blockquote small:before,
+.typography blockquote .small:before {
   content: '\2014 \00A0';
 }
+.typography .blockquote-reverse,
 .typography blockquote.pull-right {
   padding-right: 15px;
   padding-left: 0;
   border-right: 5px solid #eeeeee;
   border-left: 0;
-}
-.typography blockquote.pull-right p,
-.typography blockquote.pull-right small {
   text-align: right;
 }
-.typography blockquote.pull-right small:before {
+.typography .blockquote-reverse footer:before,
+.typography blockquote.pull-right footer:before,
+.typography .blockquote-reverse small:before,
+.typography blockquote.pull-right small:before,
+.typography .blockquote-reverse .small:before,
+.typography blockquote.pull-right .small:before {
   content: '';
 }
-.typography blockquote.pull-right small:after {
+.typography .blockquote-reverse footer:after,
+.typography blockquote.pull-right footer:after,
+.typography .blockquote-reverse small:after,
+.typography blockquote.pull-right small:after,
+.typography .blockquote-reverse .small:after,
+.typography blockquote.pull-right .small:after {
   content: '\00A0 \2014';
 }
-.typography q:before,
-.typography q:after,
 .typography blockquote:before,
 .typography blockquote:after {
   content: "";
 }
 .typography address {
-  display: block;
   margin-bottom: 20px;
   font-style: normal;
   line-height: 1.428571429;
 }
 .typography code,
-.typography pre {
-  font-family: Monaco, Menlo, Consolas, "Courier New", monospace;
+.typography kbd,
+.typography pre,
+.typography samp {
+  font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
 }
 .typography code {
   padding: 2px 4px;
@@ -283,6 +366,14 @@
   background-color: #f9f2f4;
   white-space: nowrap;
   border-radius: 4px;
+}
+.typography kbd {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #ffffff;
+  background-color: #333333;
+  border-radius: 3px;
+  box-shadow: inset 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 .typography pre {
   display: block;
@@ -297,16 +388,13 @@
   border: 1px solid #cccccc;
   border-radius: 4px;
 }
-.typography pre.prettyprint {
-  margin-bottom: 20px;
-}
 .typography pre code {
   padding: 0;
   font-size: inherit;
   color: inherit;
   white-space: pre-wrap;
   background-color: transparent;
-  border: 0;
+  border-radius: 0;
 }
 .typography .pre-scrollable {
   max-height: 340px;
@@ -315,7 +403,7 @@
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot');
-  src: url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons-halflingsregular') format('svg');
+  src: url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .typography .glyphicon {
   position: relative;
@@ -326,6 +414,7 @@
   font-weight: normal;
   line-height: 1;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 .typography .glyphicon-asterisk:before {
   content: "\2a";
@@ -441,6 +530,9 @@
 .typography .glyphicon-list-alt:before {
   content: "\e032";
 }
+.typography .glyphicon-lock:before {
+  content: "\e033";
+}
 .typography .glyphicon-flag:before {
   content: "\e034";
 }
@@ -471,8 +563,14 @@
 .typography .glyphicon-book:before {
   content: "\e043";
 }
+.typography .glyphicon-bookmark:before {
+  content: "\e044";
+}
 .typography .glyphicon-print:before {
   content: "\e045";
+}
+.typography .glyphicon-camera:before {
+  content: "\e046";
 }
 .typography .glyphicon-font:before {
   content: "\e047";
@@ -633,6 +731,9 @@
 .typography .glyphicon-leaf:before {
   content: "\e103";
 }
+.typography .glyphicon-fire:before {
+  content: "\e104";
+}
 .typography .glyphicon-eye-open:before {
   content: "\e105";
 }
@@ -644,6 +745,9 @@
 }
 .typography .glyphicon-plane:before {
   content: "\e108";
+}
+.typography .glyphicon-calendar:before {
+  content: "\e109";
 }
 .typography .glyphicon-random:before {
   content: "\e110";
@@ -684,6 +788,9 @@
 .typography .glyphicon-bullhorn:before {
   content: "\e122";
 }
+.typography .glyphicon-bell:before {
+  content: "\e123";
+}
 .typography .glyphicon-certificate:before {
   content: "\e124";
 }
@@ -720,17 +827,26 @@
 .typography .glyphicon-globe:before {
   content: "\e135";
 }
+.typography .glyphicon-wrench:before {
+  content: "\e136";
+}
 .typography .glyphicon-tasks:before {
   content: "\e137";
 }
 .typography .glyphicon-filter:before {
   content: "\e138";
 }
+.typography .glyphicon-briefcase:before {
+  content: "\e139";
+}
 .typography .glyphicon-fullscreen:before {
   content: "\e140";
 }
 .typography .glyphicon-dashboard:before {
   content: "\e141";
+}
+.typography .glyphicon-paperclip:before {
+  content: "\e142";
 }
 .typography .glyphicon-heart-empty:before {
   content: "\e143";
@@ -740,6 +856,9 @@
 }
 .typography .glyphicon-phone:before {
   content: "\e145";
+}
+.typography .glyphicon-pushpin:before {
+  content: "\e146";
 }
 .typography .glyphicon-usd:before {
   content: "\e148";
@@ -896,36 +1015,6 @@
 }
 .typography .glyphicon-tree-deciduous:before {
   content: "\e200";
-}
-.typography .glyphicon-briefcase:before {
-  content: "\1f4bc";
-}
-.typography .glyphicon-calendar:before {
-  content: "\1f4c5";
-}
-.typography .glyphicon-pushpin:before {
-  content: "\1f4cc";
-}
-.typography .glyphicon-paperclip:before {
-  content: "\1f4ce";
-}
-.typography .glyphicon-camera:before {
-  content: "\1f4f7";
-}
-.typography .glyphicon-lock:before {
-  content: "\1f512";
-}
-.typography .glyphicon-bell:before {
-  content: "\1f514";
-}
-.typography .glyphicon-bookmark:before {
-  content: "\1f516";
-}
-.typography .glyphicon-fire:before {
-  content: "\1f525";
-}
-.typography .glyphicon-wrench:before {
-  content: "\1f527";
 }
 body.mceContentBody {
   padding: 20px;
