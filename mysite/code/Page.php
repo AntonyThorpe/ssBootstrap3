@@ -34,7 +34,7 @@ class Page_Controller extends ContentController {
 		// support for HTML5 elements in older browsers (http://en.wikipedia.org/wiki/HTML5_Shiv).  Needs to be installed in the head.
 		Requirements::insertHeadTags('
 			<!--[if lt IE 9]>
-				<script type="text/javascript" src="mysite/thirdparty/bower_components/bootstrap/assets/js/html5shiv.js"></script>
+				<script type="text/javascript" src="mysite/thirdparty/bower_components/html5shiv/dist/html5shiv.js"></script>
 			<![endif]-->
 		', 'load js in head');
 
