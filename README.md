@@ -1,6 +1,6 @@
 # ssBootstrap3
 
-A [Bootstrap](http://getbootstrap.com/) / [HTML5 Boilerplate](http://html5boilerplate.com/) base theme for [SilverStripe 3](http://www.silverstripe.org/).  Uses [Less](http://lesscss.org) for CSS and [Bower](http://bower.io) to upgrade bs and javascript libraries.
+A [Bootstrap](http://getbootstrap.com/) / [HTML5 Boilerplate](http://html5boilerplate.com/) base theme for [SilverStripe 3](http://www.silverstripe.org/).  Uses [Less](http://lesscss.org) for CSS and [Bower](http://bower.io) to upgrade libraries.
 
 Contains some basic styling/support for the [Blog](https://packagist.org/packages/silverstripe/blog) module.
 
@@ -10,7 +10,7 @@ Originated from [ss-bootstrap] theme (https://github.com/gpmd/ss-bootstrap) - st
 ## Aims
 * to be able to upgrade Bootstrap and other javascript libraries quickly using Bower;
 * to use the Less technology for the generation of CSS;
-* to minimise bloat by commenting out Bootstrap's javascript and Less files not needed; and, 
+* to minimise bloat by commenting out Bootstrap's javascript and Less files; and, 
 * to wear flash pants
 
 
@@ -57,7 +57,7 @@ Originated from [ss-bootstrap] theme (https://github.com/gpmd/ss-bootstrap) - st
 5. Run `/dev/build`.
 6. Optional
  * Enable search in config `FulltextSearchable::enable();`
- * For older browsers include html5shiv.js to support HTML5 elements and/or respond.min.js for media queries (folder: `mysite/thirdparty/bower_components/bootstrap/assets/js/`).  
+ * For older browsers include html5shiv.js to support HTML5 elements (folder: `mysite/thirdparty/bower_components/html5shiv/dist/html5shiv.js`).  
 
 
 ## Requirements
@@ -87,7 +87,7 @@ Bootstrap's base variables impart at the start of each Less file.  These are ove
 
 
 ## ToDo
-* Double check the Less files as these were quickly upgraded to Bootstrap 3.0 
+* Double check the Less files as these were quickly upgraded to Bootstrap 3
 * There's probably a better way to reference a file location in the Less files than `@import "../../../mysite/thirdparty/bower_components/bootstrap/less/variables.less";`
 * Having trouble with the Blog Module
 * Link to a demo site
