@@ -1,4 +1,4 @@
-<nav class="navbar navbar-fixed top navbar-inverse" role="navigation">
+<nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
     <div class="navbar-header">
         <!-- Brand and toggle get grouped for better mobile display -->
         <a class="navbar-brand" href="$BaseHref" rel="home">$SiteConfig.Title</a>

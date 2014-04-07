@@ -1,6 +1,6 @@
 <hr>
 <footer class="footer" role="contentinfo">
-	<div class="row">
+	<div class="row pull-right">
 		&copy; Your company Limited 
 			<script type="text/javascript">
 			now = new Date

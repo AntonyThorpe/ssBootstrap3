@@ -28,12 +28,12 @@
         <div class="container">
             <% include Header %>
             
-            <div class="typography<% if $Menu(2) || ClassName = BlogHolder || ClassName = BlogEntry %> row<% end_if %>" role="main">
+            <div class="typography<% if $Menu(2) || ClassName = BlogHolder || ClassName = BlogEntry %><% end_if %>" role="main">
                 <% include Breadcrumbs %>
                 $Layout
             </div>
-            <% include Footer %>
         </div>
+        <% include Footer %>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
         <script>
