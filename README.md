@@ -2,8 +2,6 @@
 
 A [Bootstrap](http://getbootstrap.com/) / [HTML5 Boilerplate](http://html5boilerplate.com/) base theme for [SilverStripe 3](http://www.silverstripe.org/).  Uses [Less](http://lesscss.org) for CSS and [Bower](http://bower.io) to upgrade libraries.
 
-Contains some basic styling/support for the [Blog](https://packagist.org/packages/silverstripe/blog) module.
-
 Originated from [ss-bootstrap] theme (https://github.com/gpmd/ss-bootstrap) - sterling work, thank you.
 
 
@@ -61,7 +59,7 @@ Originated from [ss-bootstrap] theme (https://github.com/gpmd/ss-bootstrap) - st
 
 
 ## Requirements
-Use software to convert Less to CSS e.g. LiveReload (latest version) or https://github.com/axllent/silverstripe-less or you could use javascript (see lesscss.org. Less.js is in the folder `mysite/thirdparty/bower_components/bootstrap/assets/js/`).  
+Use software to convert Less to CSS e.g. LiveReload (latest version) or https://github.com/axllent/silverstripe-less or you could use javascript (see lesscss.org).  
 
 Bootstrap's Less files are located under the theme's `less` folder.  Target the `css` folder in your Less compiler.
 
@@ -70,7 +68,13 @@ Bootstrap's Less files are located under the theme's `less` folder.  Target the 
 Bootstrap's base variables impart at the start of each Less file.  These are overridden by `customVariables.less` before they go through Bootstrap's `mixins.less`.
 
 
-## Updating
+## Basic styling and Silverstripe modules
+ * `main.less` contains some basic styling for navigation, breadcrumbs, search, and the Blog module.
+ * `form.less` contains some basic styling for forms.  
+ * UserForms Module: for more control over presentation `UserDefinedForms.ss` page type is included under the `templates/layout` folder.
+
+
+## Updating bootstrap
 * You can use Bower to upgrade Bootstrap and jQuery plus any other javascript libraries that you need to include.  See bower.io or this blog Bower, an asset package manager (http://www.synbioz.com/blog/bower) to get started.
 * Open `bower.json` located in `mysite/thirdparty` and update the version numbers.  You can find the latest library version numbers by opening a terminal `bower info bootstrap`.  If you need to find additional libraries: `bower search libraryName`.
 
@@ -99,8 +103,9 @@ Does not support ie7.
 
 ## Changelog
 * Version 0.1 - First release
-* Version 0.2 - upgrade to SS 3.1
+* Version 0.2 - upgraded to SS 3.1
 * Version 0.3 - upgraded Bootstrap to 3.1.1
+* Version 0.4 - improved styling for Userforms and sidebar menu
 
 ## License
 Provided 'as is' - have fun! [Bootstrap](https://github.com/twbs/bootstrap/blob/master/LICENSE) and [Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/master/LICENSE.md) have their own licenses.
