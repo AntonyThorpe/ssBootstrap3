@@ -30,10 +30,24 @@
    Forms
    ========================================================================== */
 
-// Layout
+
 form[id^="Form_"] {
-    .field { .form-control; }
+    .form-group;
+
+    input[type="text"],
+    input[type="email"] { .form-control; }
+    textarea { .form-control; height: auto; }
 }
+
+.requiredField {
+    .has-error;
+}
+
+fieldset div {
+    padding-bottom: 5px;
+}
+
+
 
 // Labels
 label.right { .help-block; }

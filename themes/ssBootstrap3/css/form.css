@@ -1303,7 +1303,11 @@ fieldset[disabled] .Actions input[type="submit"].active {
 /* ==========================================================================
    Forms
    ========================================================================== */
-form[id^="Form_"] .field {
+form[id^="Form_"] {
+  margin-bottom: 15px;
+}
+form[id^="Form_"] input[type="text"],
+form[id^="Form_"] input[type="email"] {
   display: block;
   width: 100%;
   height: 34px;
@@ -1320,31 +1324,112 @@ form[id^="Form_"] .field {
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
-form[id^="Form_"] .field:focus {
+form[id^="Form_"] input[type="text"]:focus,
+form[id^="Form_"] input[type="email"]:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
-form[id^="Form_"] .field::-moz-placeholder {
+form[id^="Form_"] input[type="text"]::-moz-placeholder,
+form[id^="Form_"] input[type="email"]::-moz-placeholder {
   color: #999999;
   opacity: 1;
 }
-form[id^="Form_"] .field:-ms-input-placeholder {
+form[id^="Form_"] input[type="text"]:-ms-input-placeholder,
+form[id^="Form_"] input[type="email"]:-ms-input-placeholder {
   color: #999999;
 }
-form[id^="Form_"] .field::-webkit-input-placeholder {
+form[id^="Form_"] input[type="text"]::-webkit-input-placeholder,
+form[id^="Form_"] input[type="email"]::-webkit-input-placeholder {
   color: #999999;
 }
-form[id^="Form_"] .field[disabled],
-form[id^="Form_"] .field[readonly],
-fieldset[disabled] form[id^="Form_"] .field {
+form[id^="Form_"] input[type="text"][disabled],
+form[id^="Form_"] input[type="email"][disabled],
+form[id^="Form_"] input[type="text"][readonly],
+form[id^="Form_"] input[type="email"][readonly],
+fieldset[disabled] form[id^="Form_"] input[type="text"],
+fieldset[disabled] form[id^="Form_"] input[type="email"] {
   cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1;
 }
-textareaform[id^="Form_"] .field {
+textareaform[id^="Form_"] input[type="text"],
+textareaform[id^="Form_"] input[type="email"] {
   height: auto;
+}
+form[id^="Form_"] textarea {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.428571429;
+  color: #555555;
+  background-color: #ffffff;
+  background-image: none;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+  height: auto;
+}
+form[id^="Form_"] textarea:focus {
+  border-color: #66afe9;
+  outline: 0;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
+}
+form[id^="Form_"] textarea::-moz-placeholder {
+  color: #999999;
+  opacity: 1;
+}
+form[id^="Form_"] textarea:-ms-input-placeholder {
+  color: #999999;
+}
+form[id^="Form_"] textarea::-webkit-input-placeholder {
+  color: #999999;
+}
+form[id^="Form_"] textarea[disabled],
+form[id^="Form_"] textarea[readonly],
+fieldset[disabled] form[id^="Form_"] textarea {
+  cursor: not-allowed;
+  background-color: #eeeeee;
+  opacity: 1;
+}
+textareaform[id^="Form_"] textarea {
+  height: auto;
+}
+.requiredField .help-block,
+.requiredField .control-label,
+.requiredField .radio,
+.requiredField .checkbox,
+.requiredField .radio-inline,
+.requiredField .checkbox-inline {
+  color: #a94442;
+}
+.requiredField .form-control {
+  border-color: #a94442;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+}
+.requiredField .form-control:focus {
+  border-color: #843534;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 6px #ce8483;
+}
+.requiredField .input-group-addon {
+  color: #a94442;
+  border-color: #a94442;
+  background-color: #f2dede;
+}
+.requiredField .form-control-feedback {
+  color: #a94442;
+}
+fieldset div {
+  padding-bottom: 5px;
 }
 label.right {
   display: block;

@@ -74,9 +74,9 @@
    ========================================================================== */
 
 // Active nav items
-.navbar .nav > .current > a,
-.navbar .nav > .current > a:hover,
-.navbar .nav > .current > a:focus {
+.navbar-nav > .current > a,
+.navbar-nav > .current > a:hover,
+.navbar-nav > .current > a:focus {
     color: @navbar-default-link-color;
     text-decoration: none;
     background-color: @navbar-default-link-active-color;
@@ -85,9 +85,9 @@
 
 // Inverted navbar
 .navbar-inverse {
-    .nav .current > a,
-    .nav .current > a:hover,
-    .nav .current > a:focus {
+    .current > a,
+    .current > a:hover,
+    .current > a:focus {
         color: @navbar-inverse-link-active-color;
         background-color: @navbar-inverse-link-active-bg;
     }
@@ -146,18 +146,11 @@ li {
   list-style: none;
 }
 
-
-/* ==========================================================================
-   Contact us form
+/* Other
    ========================================================================== */
 
-#contact-us {
-    form[id^="Form_"] {
-        input[type="text"],
-        input[type="email"],
-        textarea { .input-lg; }
-    }
-}
+hr {width: 100%; } 
+
 
 /* ==========================================================================
    Silverstripe blog module

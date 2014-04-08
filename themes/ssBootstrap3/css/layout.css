@@ -1014,6 +1014,10 @@ table th[class*="col-"] {
     display: none !important;
   }
 }
-body {
-  padding: 20px 0 0;
+.page-outer {
+  margin-top: 70px;
+}
+.sidebar {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
 }
