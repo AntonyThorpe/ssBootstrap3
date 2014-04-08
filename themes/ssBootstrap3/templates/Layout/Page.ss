@@ -1,6 +1,6 @@
 <div class="row">
 	<% if $Menu(2) %>
-		<div class="col-sm-3 col-md-3">
+		<div class="col-sm-3 col-md-3 sidebar">
 			<% include SideBar %>
 		</div>
 	<% end_if %>

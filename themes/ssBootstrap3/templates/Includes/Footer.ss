@@ -1,7 +1,7 @@
 <hr>
 <footer class="footer" role="contentinfo">
 	<div class="row pull-right">
-		&copy; Your company Limited 
+		&copy; Your business name 
 			<script type="text/javascript">
 			now = new Date
 			theYear=now.getYear()

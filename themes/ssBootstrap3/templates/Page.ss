@@ -25,7 +25,7 @@
 
         <% include Navigation %>
         
-        <div class="container">
+        <div class="container page-outer">
             <% include Header %>
             
             <div class="typography<% if $Menu(2) || ClassName = BlogHolder || ClassName = BlogEntry %><% end_if %>" role="main">
