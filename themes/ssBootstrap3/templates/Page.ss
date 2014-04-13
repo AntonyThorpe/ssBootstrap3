@@ -14,7 +14,7 @@
         <link rel="shortcut icon" href="$ThemeDir/favicon.ico" />
         
     </head>
-    <!-- body -->
+
     <body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>" id="$URLSegment">
 
         <!-- ToDo: out of date browsers -->
@@ -25,12 +25,14 @@
 
         <% include Navigation %>
         
-        <div class="container page-outer">
-            <% include Header %>
-            
-            <div class="typography<% if $Menu(2) || ClassName = BlogHolder || ClassName = BlogEntry %><% end_if %>" role="main">
-                <% include Breadcrumbs %>
-                $Layout
+        <main class="main" role="main">
+            <div class="container">
+                <% include Header %>
+                
+                <div class="typography<% if $Menu(2) || ClassName = BlogHolder || ClassName = BlogEntry %><% end_if %>" >
+                    <% include Breadcrumbs %>
+                    $Layout
+                </div>
             </div>
         </div>
         <% include Footer %>

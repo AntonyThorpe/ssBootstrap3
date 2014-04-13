@@ -2,6 +2,8 @@
  * Layout
  */
 
+ // Sticky footer reference: http://getbootstrap.com/examples/sticky-footer/
+
 
 // Core variables and mixins
 @import "../../../mysite/thirdparty/bower_components/bootstrap/less/variables.less";
@@ -13,6 +15,47 @@
 @import "../../../mysite/thirdparty/bower_components/bootstrap/less/responsive-utilities.less";
 
 
-.page-outer { margin-top: 70px;}
-.sidebar {	padding-bottom: 9px;
-			margin: 40px 0 20px;}
+
+.sidebar {	padding-bottom: 9px; margin: 40px 0 20px;}
+
+
+html {
+	// Sticky footer settigs
+	position: relative;
+	min-height: 100%;
+}
+
+body {
+  	
+  	// Sticky footer settigs
+	/* Margin bottom by footer height */
+	margin-bottom: 60px;
+
+  	@media (max-width: @screen-sm-min) {   // Remove sticky footer settings for mobile 
+		margin-bottom: auto;
+  	}
+
+  	
+}
+
+.main {
+	margin-top: 70px;
+	
+	@media (max-width: @screen-sm-min) {   // padding for mobile phones
+		padding: 0 20px;
+	}
+}
+
+.footer {
+	// sticky footer settings
+	position: absolute;
+	width: 100%;
+	height: 60px;   /* same as the body margin-bottom */
+	bottom: 0;
+
+	@media (max-width: @screen-sm-min) {   // Remove sticky footer settings for mobile 
+		height: auto;
+		bottom: auto;
+  	}
+	
+}
