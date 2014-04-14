@@ -1,7 +1,5 @@
 <% if $Level(2) %>
-	<div class="row">
-		<ul class="breadcrumb">
-		    $Breadcrumbs
-		</ul>
-	</div>
+	<ol class="breadcrumb hidden-xs">
+    	$Breadcrumbs
+	</ol>
 <% end_if %>

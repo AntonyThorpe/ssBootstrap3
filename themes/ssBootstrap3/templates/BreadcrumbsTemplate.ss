@@ -1,7 +1,15 @@
-<% if Pages %>
-<% loop Pages %>
-<li>
-	<% if Last %><li class="active">$Title.XML</li><% else %><a href="$Link">$MenuTitle.XML</a> <span class="divider">/</span><% end_if %>
-</li>
-<% end_loop %>
+<!-- https://github.com/XploreNet/bootstripe/blob/master/src/templates/BreadcrumbsTemplate.ss -->
+<% if $Pages %>
+	<ol class="breadcrumb">
+		<li><a href="$BaseHref">Home</a></li>
+		<% loop $Pages %>
+			<% if $Last %>
+				<li class="active">$MenuTitle.XML</li>
+			<% else %>
+				<li>
+					<a href="$Link">$MenuTitle.XML</a>
+				</li>
+			<% end_if %>
+		<% end_loop %>
+	</ol>
 <% end_if %>

@@ -69,7 +69,7 @@ Bootstrap's base variables impart at the start of each Less file.  These are ove
 
 
 ## Basic styling and Silverstripe modules
- * `main.less` contains some basic styling for navigation, breadcrumbs, search, and the Blog module.
+ * `main.less` contains some basic styling for navigation, search, and the Blog module.
  * `form.less` contains some basic styling for forms.  
  * UserForms Module: for more control over presentation `UserDefinedForms.ss` page type is included under the `templates/layout` folder (remove $UserDefinedForm from within the CMS).  
  * `layout.ess` includes sticky footer settings
