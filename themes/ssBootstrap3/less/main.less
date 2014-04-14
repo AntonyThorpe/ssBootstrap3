@@ -5,9 +5,9 @@
  * and supplementary styles for the SS3 blog and comments module
  */
 
-/* ==========================================================================
-   Imports
-   ========================================================================== */
+/* 	==========================================================================
+	 Imports
+	========================================================================== */
 
 // Core variables and mixins
 @import "../../../mysite/thirdparty/bower_components/bootstrap/less/variables.less";
@@ -69,88 +69,88 @@
 
 
 
-/* ==========================================================================
-   Navbar - extending Bootstrap's default styling for SS
-   ========================================================================== */
+/* 	==========================================================================
+	 Navbar - extending Bootstrap's default styling for SS
+	========================================================================== */
 
 // Active nav items
 .navbar-nav > .current > a,
 .navbar-nav > .current > a:hover,
 .navbar-nav > .current > a:focus {
-    color: @navbar-default-link-color;
-    text-decoration: none;
-    background-color: @navbar-default-link-active-color;
-    .box-shadow(inset 0 3px 8px rgba(0,0,0,.125));
+		color: @navbar-default-link-color;
+		text-decoration: none;
+		background-color: @navbar-default-link-active-color;
+		.box-shadow(inset 0 3px 8px rgba(0,0,0,.125));
 }
 
 // Inverted navbar
 .navbar-inverse {
-    .current > a,
-    .current > a:hover,
-    .current > a:focus {
-        color: @navbar-inverse-link-active-color;
-        background-color: @navbar-inverse-link-active-bg;
-    }
+		.current > a,
+		.current > a:hover,
+		.current > a:focus {
+				color: @navbar-inverse-link-active-color;
+				background-color: @navbar-inverse-link-active-bg;
+		}
 }
 
 // Search
 #SearchForm_SearchForm {
-    input[type="text"] {
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
-    input[type="submit"] {
-        padding: 5px 12px;
-        margin-top: 5px;
-        margin-bottom: 5px;
-    }
+		input[type="text"] {
+				margin-top: 5px;
+				margin-bottom: 5px;
+		}
+		input[type="submit"] {
+				padding: 5px 12px;
+				margin-top: 5px;
+				margin-bottom: 5px;
+		}
 }
 
-/* ==========================================================================
-   Navs
-   ========================================================================== */
+/* 	==========================================================================
+	 Navs
+	========================================================================== */
 
 // Redeclaring due to specificity issues
 .nav-group {
-    margin-bottom: 0 !important;
-    margin-left: 0 !important;
-    padding-left: 15px !important;
-    padding-right: 15px !important;
+		margin-bottom: 0 !important;
+		margin-left: 0 !important;
+		padding-left: 15px !important;
+		padding-right: 15px !important;
 }
 
 
-/* Lists
-   ========================================================================== */
+/* 	Lists
+	========================================================================== */
 
 // Unordered and Ordered lists
 li {
-  list-style: none;
+	list-style: none;
 }
 
-/* Other
-   ========================================================================== */
+/* 	Other
+	========================================================================== */
 
 hr {width: 100%; } 
 
 
-/* ==========================================================================
-   Silverstripe blog module
-   ========================================================================== */
+/* 	==========================================================================
+	 Silverstripe blog module
+	========================================================================== */
 
-/* Blog holder
-   ========================================================================== */
+/* 	Blog holder
+	========================================================================== */
 
 /* Layout */
 .blogSummary { margin-bottom: @line-height-base * 1.5; }
 
-/* Blog entry
-   ========================================================================== */
+/* 	Blog entry
+	========================================================================== */
 
 /* Layout */
 .blogEntry { margin-bottom: @line-height-base * 1.5; }
 .edit-post {
-    padding-top: 0;
-    margin-bottom: @line-height-base * 1.5 !important;
+		padding-top: 0;
+		margin-bottom: @line-height-base * 1.5 !important;
 }
 
 /* Meta */
@@ -159,109 +159,109 @@ hr {width: 100%; }
 
 /* Tag cloud widget */
 .tagcloud {
-    .not-popular { font-size: @font-size-base * 0.6; }
-    .not-very-popular { font-size: @font-size-base * 0.8; }
-    .somewhat-popular { font-size: @font-size-base; }
-    .popular { font-size: @font-size-base * 1.2; }
-    .very-popular { font-size: @font-size-base * 1.4; }
-    .ultra-popular { font-size: @font-size-base * 1.6; }
+		.not-popular { font-size: @font-size-base * 0.6; }
+		.not-very-popular { font-size: @font-size-base * 0.8; }
+		.somewhat-popular { font-size: @font-size-base; }
+		.popular { font-size: @font-size-base * 1.2; }
+		.very-popular { font-size: @font-size-base * 1.4; }
+		.ultra-popular { font-size: @font-size-base * 1.6; }
 }
 
 /* Buttons */
 .edit-post,
 .commenting-rss-feed {
-    a {
-        .btn;
-        .btn-default;
-        .btn-sm;
-        &#editpost { .btn-primary; }
-        &#unpublishpost { .btn-danger; }
-    }
+		a {
+				.btn;
+				.btn-default;
+				.btn-sm;
+				&#editpost { .btn-primary; }
+				&#unpublishpost { .btn-danger; }
+		}
 }
 
-/* Comments module
-   ========================================================================== */
+/* 	Comments module
+	========================================================================== */
 
 /* Typography */
 #comments-holder {
-    h4 {
-        margin-bottom: @line-height-base;
-        font-size: @font-size-base * 1.75;
-    }
+		h4 {
+				margin-bottom: @line-height-base;
+				font-size: @font-size-base * 1.75;
+		}
 }
 
 /* Form */
 #Form_CommentsForm {
-    margin-bottom: @line-height-base * 1.5;
-    input[type="text"],
-    input[type="email"],
-    textarea { .input-lg; }
+		margin-bottom: @line-height-base * 1.5;
+		input[type="text"],
+		input[type="email"],
+		textarea { .input-lg; }
 }
 
 /* Comments */
 .comments-list {
-    margin-left: 0 !important;
-    list-style: none;
-    li { margin-bottom: @line-height-base * 1.5; }
-    .action-links {
-        margin-left: 0 !important;
-        list-style: none;
-        li {
-            display: inline-block;
-            margin-bottom: 0 !important;
-            a {
-                .btn;
-                .btn-default;
-                .btn-sm;
-                &.spam { .btn-warning; }
-                &.delete { .btn-danger; }
-            }
-        }
-    }
+		margin-left: 0 !important;
+		list-style: none;
+		li { margin-bottom: @line-height-base * 1.5; }
+		.action-links {
+				margin-left: 0 !important;
+				list-style: none;
+				li {
+						display: inline-block;
+						margin-bottom: 0 !important;
+						a {
+								.btn;
+								.btn-default;
+								.btn-sm;
+								&.spam { .btn-warning; }
+								&.delete { .btn-danger; }
+						}
+				}
+		}
 }
 
-/* Widgets
-   ========================================================================== */
+/* 	Widgets
+	========================================================================== */
 
 .WidgetHolder {
-    margin-bottom: @line-height-base;
-    ul {
-        margin-left: 0;
-        list-style: none;
-    }
+		margin-bottom: @line-height-base;
+		ul {
+				margin-left: 0;
+				list-style: none;
+		}
 }
 
 .subscribeLink { .btn; .btn-default }
 
-/* Labels and badges
-   ========================================================================== */
+/* 	Labels and badges
+	========================================================================== */
 
 a[rel="tag"] {
-    .label;
-    background-color: @state-info-text;
+		.label;
+		background-color: @state-info-text;
 }
 
 
-/* Labels and badges
-   ========================================================================== */
+/* 	Labels and badges
+	========================================================================== */
 #bg {
-  position: fixed; 
-  top: -50%; 
-  left: -50%; 
-  width: 200%; 
-  height: 200%;
+	position: fixed; 
+	top: -50%; 
+	left: -50%; 
+	width: 200%; 
+	height: 200%;
 }
 #bg img {
-  position: absolute; 
-  top: 0; 
-  left: 0; 
-  right: 0; 
-  bottom: 0; 
-  margin: auto; 
-  min-width: 50%;
-  min-height: 50%;
-  max-width: 940 px;
-  max-height: 317 px;
+	position: absolute; 
+	top: 0; 
+	left: 0; 
+	right: 0; 
+	bottom: 0; 
+	margin: auto; 
+	min-width: 50%;
+	min-height: 50%;
+	max-width: 940 px;
+	max-height: 317 px;
 }
 
 
