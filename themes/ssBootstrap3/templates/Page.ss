@@ -26,13 +26,11 @@
         <% include Navigation %>
         
         <main class="main" role="main">
-            <div class="container">
-                <% include Header %>
-                
-                <div class="typography<% if $Menu(2) || ClassName = BlogHolder || ClassName = BlogEntry %><% end_if %>" >
-                    <% include Breadcrumbs %>
-                    $Layout
-                </div>
+            <% include Header %>
+            
+            <div class="typography container <% if $Menu(2) || ClassName = BlogHolder || ClassName = BlogEntry %><% end_if %>" >
+                <% include BreadCrumbs %>
+                $Layout
             </div>
         </div>
         <% include Footer %>

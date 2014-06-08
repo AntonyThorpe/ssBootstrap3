@@ -2,7 +2,7 @@
 <footer class="footer" role="contentinfo">
 <hr>
 	<div class="container">
-		<div class="row">
+		<div class="clearfix row">
 			<div class="pull-left">
 				&copy; Your business name 
 					<script type="text/javascript">

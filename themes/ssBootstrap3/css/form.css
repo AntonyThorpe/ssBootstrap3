@@ -1303,11 +1303,12 @@ fieldset[disabled] .Actions input[type="submit"].active {
 /* ==========================================================================
    Forms
    ========================================================================== */
-form[id^="Form_"] {
+form {
   margin-bottom: 15px;
 }
-form[id^="Form_"] input[type="text"],
-form[id^="Form_"] input[type="email"] {
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
   display: block;
   width: 100%;
   height: 34px;
@@ -1324,41 +1325,49 @@ form[id^="Form_"] input[type="email"] {
   -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
-form[id^="Form_"] input[type="text"]:focus,
-form[id^="Form_"] input[type="email"]:focus {
+form input[type="text"]:focus,
+form input[type="email"]:focus,
+form input[type="password"]:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
-form[id^="Form_"] input[type="text"]::-moz-placeholder,
-form[id^="Form_"] input[type="email"]::-moz-placeholder {
+form input[type="text"]::-moz-placeholder,
+form input[type="email"]::-moz-placeholder,
+form input[type="password"]::-moz-placeholder {
   color: #999999;
   opacity: 1;
 }
-form[id^="Form_"] input[type="text"]:-ms-input-placeholder,
-form[id^="Form_"] input[type="email"]:-ms-input-placeholder {
+form input[type="text"]:-ms-input-placeholder,
+form input[type="email"]:-ms-input-placeholder,
+form input[type="password"]:-ms-input-placeholder {
   color: #999999;
 }
-form[id^="Form_"] input[type="text"]::-webkit-input-placeholder,
-form[id^="Form_"] input[type="email"]::-webkit-input-placeholder {
+form input[type="text"]::-webkit-input-placeholder,
+form input[type="email"]::-webkit-input-placeholder,
+form input[type="password"]::-webkit-input-placeholder {
   color: #999999;
 }
-form[id^="Form_"] input[type="text"][disabled],
-form[id^="Form_"] input[type="email"][disabled],
-form[id^="Form_"] input[type="text"][readonly],
-form[id^="Form_"] input[type="email"][readonly],
-fieldset[disabled] form[id^="Form_"] input[type="text"],
-fieldset[disabled] form[id^="Form_"] input[type="email"] {
+form input[type="text"][disabled],
+form input[type="email"][disabled],
+form input[type="password"][disabled],
+form input[type="text"][readonly],
+form input[type="email"][readonly],
+form input[type="password"][readonly],
+fieldset[disabled] form input[type="text"],
+fieldset[disabled] form input[type="email"],
+fieldset[disabled] form input[type="password"] {
   cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1;
 }
-textareaform[id^="Form_"] input[type="text"],
-textareaform[id^="Form_"] input[type="email"] {
+textareaform input[type="text"],
+textareaform input[type="email"],
+textareaform input[type="password"] {
   height: auto;
 }
-form[id^="Form_"] textarea {
+form textarea {
   display: block;
   width: 100%;
   height: 34px;
@@ -1376,30 +1385,30 @@ form[id^="Form_"] textarea {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
   height: auto;
 }
-form[id^="Form_"] textarea:focus {
+form textarea:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
-form[id^="Form_"] textarea::-moz-placeholder {
+form textarea::-moz-placeholder {
   color: #999999;
   opacity: 1;
 }
-form[id^="Form_"] textarea:-ms-input-placeholder {
+form textarea:-ms-input-placeholder {
   color: #999999;
 }
-form[id^="Form_"] textarea::-webkit-input-placeholder {
+form textarea::-webkit-input-placeholder {
   color: #999999;
 }
-form[id^="Form_"] textarea[disabled],
-form[id^="Form_"] textarea[readonly],
-fieldset[disabled] form[id^="Form_"] textarea {
+form textarea[disabled],
+form textarea[readonly],
+fieldset[disabled] form textarea {
   cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1;
 }
-textareaform[id^="Form_"] textarea {
+textareaform textarea {
   height: auto;
 }
 .requiredField .help-block,

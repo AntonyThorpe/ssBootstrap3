@@ -1,7 +1,6 @@
 <!-- https://github.com/XploreNet/bootstripe/blob/master/src/templates/BreadcrumbsTemplate.ss -->
 <% if $Pages %>
 	<ol class="breadcrumb">
-		<li><a href="$BaseHref">Home</a></li>
 		<% loop $Pages %>
 			<% if $Last %>
 				<li class="active">$MenuTitle.XML</li>

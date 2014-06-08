@@ -64,14 +64,14 @@ class Page_Controller extends ContentController {
 				'mysite/thirdparty/bower_components/bootstrap/js/alert.js',
 				'mysite/thirdparty/bower_components/bootstrap/js/botton.js',
 				'mysite/thirdparty/bower_components/bootstrap/js/carousel.js',
-				'mysite/thirdparty/bower_components/bootstrap/js/collapse.js',
+				'mysite/thirdparty/bower_components/bootstrap/js/transition.js',
+				'mysite/thirdparty/bower_components/bootstrap/js/collapse.js', // depends on transition.js
 				'mysite/thirdparty/bower_components/bootstrap/js/dropdown.js',
 				'mysite/thirdparty/bower_components/bootstrap/js/modal.js',
 				'mysite/thirdparty/bower_components/bootstrap/js/tooltip.js',
-				'mysite/thirdparty/bower_components/bootstrap/js/popover.js', // requires tooltip.js
+				'mysite/thirdparty/bower_components/bootstrap/js/popover.js', // depends on tooltip.js
 				'mysite/thirdparty/bower_components/bootstrap/js/scrollspy.js',
 				'mysite/thirdparty/bower_components/bootstrap/js/tab.js',
-				'mysite/thirdparty/bower_components/bootstrap/js/transition.js',
 			)
 		); 
 
