@@ -40,14 +40,14 @@ Originated from [ss-bootstrap] theme (https://github.com/gpmd/ss-bootstrap) - st
 			'mysite/thirdparty/bower_components/bootstrap/js/alert.js',
 			'mysite/thirdparty/bower_components/bootstrap/js/botton.js',
 			'mysite/thirdparty/bower_components/bootstrap/js/carousel.js',
-			'mysite/thirdparty/bower_components/bootstrap/js/collapse.js',
+			'mysite/thirdparty/bower_components/bootstrap/js/transition.js',
+			'mysite/thirdparty/bower_components/bootstrap/js/collapse.js', // depends on transition.js
 			'mysite/thirdparty/bower_components/bootstrap/js/dropdown.js',
 			'mysite/thirdparty/bower_components/bootstrap/js/modal.js',
 			'mysite/thirdparty/bower_components/bootstrap/js/tooltip.js',
-			'mysite/thirdparty/bower_components/bootstrap/js/popover.js',
+			'mysite/thirdparty/bower_components/bootstrap/js/popover.js',  // depends on tooltip.js
 			'mysite/thirdparty/bower_components/bootstrap/js/scrollspy.js',
 			'mysite/thirdparty/bower_components/bootstrap/js/tab.js',
-			'mysite/thirdparty/bower_components/bootstrap/js/transition.js',
 		)
 	);
 ```
@@ -92,7 +92,6 @@ Bootstrap's base variables impart at the start of each Less file.  These are ove
 
 
 ## ToDo
-* Double check the Less files as these were quickly upgraded to Bootstrap 3
 * There's probably a better way to reference a file location in the Less files than `@import "../../../mysite/thirdparty/bower_components/bootstrap/less/variables.less";`
 * Having trouble with the Blog Module
 * Link to a demo site
