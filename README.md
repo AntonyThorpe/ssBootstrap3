@@ -32,8 +32,7 @@ Originated from [ss-bootstrap] theme (https://github.com/gpmd/ss-bootstrap) - st
 	Requirements::combine_files(
 		'combine.js',
 		 array(
-		 	'mysite/thirdparty/bower_components/jquery/jquery.min.js',
-		 	'mysite/thirdparty/bower_components/jquery/jquery-migrate.js',
+		 	'mysite/thirdparty/bower_components/jquery/dist/jquery.min.js'
 
 		 	// comment out the javascript files not needed
 			'mysite/thirdparty/bower_components/bootstrap/js/affix.js',
