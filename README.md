@@ -84,11 +84,12 @@ Bootstrap's base variables impart at the start of each Less file.  These are ove
 			"name": "yourProjectName",
 			"version": "0.0.0",
 			"dependencies": {
-				"bootstrap": ">= 3.0.0" 
+				"bootstrap": ">= 3.2.0",
+				"html5shiv": "3.7.2" 
 			}
 		}
 
-* Then in the terminal cd to `mysite/thirdparty/` and `bower install`.
+* Then in the terminal cd to `mysite/thirdparty/` and `bower install`.  
 
 
 ## ToDo
