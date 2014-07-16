@@ -84,7 +84,8 @@ Bootstrap's base variables impart at the start of each Less file.  These are ove
 			"version": "0.0.0",
 			"dependencies": {
 				"bootstrap": ">= 3.2.0",
-				"html5shiv": "3.7.2" 
+				"html5shiv": "3.7.2",
+				"respond": "1.4.2" 
 			}
 		}
 
