@@ -1381,7 +1381,19 @@ form {
 }
 form input[type="text"],
 form input[type="email"],
-form input[type="password"] {
+form input[type="password"],
+form input[type="datetime"],
+form input[type="datetime-local"],
+form input[type="date"],
+form input[type="month"],
+form input[type="time"],
+form input[type="week"],
+form input[type="number"],
+form input[type="url"],
+form input[type="search"],
+form input[type="tel"],
+form input[type="color"],
+form select {
   display: block;
   width: 100%;
   height: 34px;
@@ -1401,7 +1413,19 @@ form input[type="password"] {
 }
 form input[type="text"]:focus,
 form input[type="email"]:focus,
-form input[type="password"]:focus {
+form input[type="password"]:focus,
+form input[type="datetime"]:focus,
+form input[type="datetime-local"]:focus,
+form input[type="date"]:focus,
+form input[type="month"]:focus,
+form input[type="time"]:focus,
+form input[type="week"]:focus,
+form input[type="number"]:focus,
+form input[type="url"]:focus,
+form input[type="search"]:focus,
+form input[type="tel"]:focus,
+form input[type="color"]:focus,
+form select:focus {
   border-color: #66afe9;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
@@ -1409,36 +1433,120 @@ form input[type="password"]:focus {
 }
 form input[type="text"]::-moz-placeholder,
 form input[type="email"]::-moz-placeholder,
-form input[type="password"]::-moz-placeholder {
+form input[type="password"]::-moz-placeholder,
+form input[type="datetime"]::-moz-placeholder,
+form input[type="datetime-local"]::-moz-placeholder,
+form input[type="date"]::-moz-placeholder,
+form input[type="month"]::-moz-placeholder,
+form input[type="time"]::-moz-placeholder,
+form input[type="week"]::-moz-placeholder,
+form input[type="number"]::-moz-placeholder,
+form input[type="url"]::-moz-placeholder,
+form input[type="search"]::-moz-placeholder,
+form input[type="tel"]::-moz-placeholder,
+form input[type="color"]::-moz-placeholder,
+form select::-moz-placeholder {
   color: #777777;
   opacity: 1;
 }
 form input[type="text"]:-ms-input-placeholder,
 form input[type="email"]:-ms-input-placeholder,
-form input[type="password"]:-ms-input-placeholder {
+form input[type="password"]:-ms-input-placeholder,
+form input[type="datetime"]:-ms-input-placeholder,
+form input[type="datetime-local"]:-ms-input-placeholder,
+form input[type="date"]:-ms-input-placeholder,
+form input[type="month"]:-ms-input-placeholder,
+form input[type="time"]:-ms-input-placeholder,
+form input[type="week"]:-ms-input-placeholder,
+form input[type="number"]:-ms-input-placeholder,
+form input[type="url"]:-ms-input-placeholder,
+form input[type="search"]:-ms-input-placeholder,
+form input[type="tel"]:-ms-input-placeholder,
+form input[type="color"]:-ms-input-placeholder,
+form select:-ms-input-placeholder {
   color: #777777;
 }
 form input[type="text"]::-webkit-input-placeholder,
 form input[type="email"]::-webkit-input-placeholder,
-form input[type="password"]::-webkit-input-placeholder {
+form input[type="password"]::-webkit-input-placeholder,
+form input[type="datetime"]::-webkit-input-placeholder,
+form input[type="datetime-local"]::-webkit-input-placeholder,
+form input[type="date"]::-webkit-input-placeholder,
+form input[type="month"]::-webkit-input-placeholder,
+form input[type="time"]::-webkit-input-placeholder,
+form input[type="week"]::-webkit-input-placeholder,
+form input[type="number"]::-webkit-input-placeholder,
+form input[type="url"]::-webkit-input-placeholder,
+form input[type="search"]::-webkit-input-placeholder,
+form input[type="tel"]::-webkit-input-placeholder,
+form input[type="color"]::-webkit-input-placeholder,
+form select::-webkit-input-placeholder {
   color: #777777;
 }
 form input[type="text"][disabled],
 form input[type="email"][disabled],
 form input[type="password"][disabled],
+form input[type="datetime"][disabled],
+form input[type="datetime-local"][disabled],
+form input[type="date"][disabled],
+form input[type="month"][disabled],
+form input[type="time"][disabled],
+form input[type="week"][disabled],
+form input[type="number"][disabled],
+form input[type="url"][disabled],
+form input[type="search"][disabled],
+form input[type="tel"][disabled],
+form input[type="color"][disabled],
+form select[disabled],
 form input[type="text"][readonly],
 form input[type="email"][readonly],
 form input[type="password"][readonly],
+form input[type="datetime"][readonly],
+form input[type="datetime-local"][readonly],
+form input[type="date"][readonly],
+form input[type="month"][readonly],
+form input[type="time"][readonly],
+form input[type="week"][readonly],
+form input[type="number"][readonly],
+form input[type="url"][readonly],
+form input[type="search"][readonly],
+form input[type="tel"][readonly],
+form input[type="color"][readonly],
+form select[readonly],
 fieldset[disabled] form input[type="text"],
 fieldset[disabled] form input[type="email"],
-fieldset[disabled] form input[type="password"] {
+fieldset[disabled] form input[type="password"],
+fieldset[disabled] form input[type="datetime"],
+fieldset[disabled] form input[type="datetime-local"],
+fieldset[disabled] form input[type="date"],
+fieldset[disabled] form input[type="month"],
+fieldset[disabled] form input[type="time"],
+fieldset[disabled] form input[type="week"],
+fieldset[disabled] form input[type="number"],
+fieldset[disabled] form input[type="url"],
+fieldset[disabled] form input[type="search"],
+fieldset[disabled] form input[type="tel"],
+fieldset[disabled] form input[type="color"],
+fieldset[disabled] form select {
   cursor: not-allowed;
   background-color: #eeeeee;
   opacity: 1;
 }
 textareaform input[type="text"],
 textareaform input[type="email"],
-textareaform input[type="password"] {
+textareaform input[type="password"],
+textareaform input[type="datetime"],
+textareaform input[type="datetime-local"],
+textareaform input[type="date"],
+textareaform input[type="month"],
+textareaform input[type="time"],
+textareaform input[type="week"],
+textareaform input[type="number"],
+textareaform input[type="url"],
+textareaform input[type="search"],
+textareaform input[type="tel"],
+textareaform input[type="color"],
+textareaform select {
   height: auto;
 }
 form textarea {
@@ -1512,17 +1620,16 @@ textareaform textarea {
 .requiredField .form-control-feedback {
   color: #a94442;
 }
-fieldset div {
-  padding-bottom: 5px;
-}
 label.right {
   display: block;
   margin-top: 5px;
   margin-bottom: 10px;
   color: #737373;
 }
-input[type="radio"],
 input[type="checkbox"] {
+  margin-left: 0 !important;
+}
+input[type="radio"] {
   float: left;
   margin-top: 0 !important;
   margin-left: -20px;
@@ -1535,49 +1642,8 @@ input[type="checkbox"] {
   min-height: 1.428571429;
   padding-left: 20px;
 }
-select {
-  display: block;
-  width: 100%;
-  height: 34px;
-  padding: 6px 12px;
-  font-size: 14px;
-  line-height: 1.428571429;
-  color: #555555;
-  background-color: #ffffff;
-  background-image: none;
-  border: 1px solid #cccccc;
-  border-radius: 4px;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
-  -webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-  transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
-}
-select:focus {
-  border-color: #66afe9;
-  outline: 0;
-  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-  box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
-}
-select::-moz-placeholder {
-  color: #777777;
-  opacity: 1;
-}
-select:-ms-input-placeholder {
-  color: #777777;
-}
-select::-webkit-input-placeholder {
-  color: #777777;
-}
-select[disabled],
-select[readonly],
-fieldset[disabled] select {
-  cursor: not-allowed;
-  background-color: #eeeeee;
-  opacity: 1;
-}
-textareaselect {
-  height: auto;
+fieldset div {
+  padding-bottom: 5px;
 }
 label.required,
 input.required,
