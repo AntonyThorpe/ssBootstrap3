@@ -2,7 +2,7 @@
 
 <% if $Children %>
 	<% loop $Children %>
-		<li class="$LinkingMode list-unstyled">
+		<li class="$LinkingMode">
 		    <a href="$Link" class="$LinkingMode" title="$Title.XML">
 		        $MenuTitle.XML
 		    </a>
