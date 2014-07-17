@@ -9,22 +9,20 @@
         <title><% if MetaTitle %>$MetaTitle<% else %>$Title<% end_if %> | $SiteConfig.Title<% if SiteConfig.Tagline %> - $SiteConfig.Tagline<% end_if %></title>
         $MetaTags(false)
         <% base_tag %>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="shortcut icon" href="$ThemeDir/favicon.ico" />
         
+        <!-- iOS/Android bookmarking icons-->
+        <meta name="mobile-web-app-capable" content="yes">
+        <link rel="icon" sizes="196x196" href="$ThemeDir/icon.gif">
+        <link rel="apple-touch-icon" sizes="152x152" href="$ThemeDir/apple-touch-icon.gif">
+
     </head>
 
     <body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>" id="$URLSegment">
 
-        <!-- ToDo: out of date browsers -->
-        
-        <!--[if lt IE 8]>
-        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
-        <![endif]-->
-
         <% include Navigation %>
-        
+       
         <main class="main" role="main">
             <% include Header %>
             
