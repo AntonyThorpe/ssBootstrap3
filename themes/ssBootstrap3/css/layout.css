@@ -1144,6 +1144,7 @@ body {
   }
 }
 .footer {
+  background-color: gray-lighter;
   position: absolute;
   width: 100%;
   height: 60px;
@@ -1156,4 +1157,25 @@ body {
     height: auto;
     bottom: auto;
   }
+}
+.footer-wrapper {
+  width: 100%;
+  text-align: justify;
+  -ms-text-justify: distribute-all-lines;
+  text-justify: distribute-all-lines;
+  padding-right: 30px;
+}
+.footer-box {
+  vertical-align: top;
+  display: inline-block;
+  *display: inline;
+  zoom: 1;
+}
+.stretch {
+  width: 100%;
+  display: inline-block;
+  font-size: 0.1;
+  /* IE 9/10 don't like font-size: 0; */
+
+  line-height: 0;
 }

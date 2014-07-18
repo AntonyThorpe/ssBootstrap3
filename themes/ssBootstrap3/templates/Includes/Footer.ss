@@ -3,12 +3,12 @@
 		<div class="clearfix row">
 			<div class="row">
 				<div class="col-sm-10 col-md-10">
-					<div class="clearfix row">
+					<div class="clearfix footer-wrapper">
 						<% loop $Menu(1) %>
 
 							<% if $MenuTitle != "Contact" %>
 
-								<div class="col-sm-3 col-md-3"> 
+								<div class="footer-box"> 
 									<a class="$LinkingMode" href="$Link" title="Go to the $Title page">
 										<h5>$MenuTitle</h5>
 									</a>
@@ -30,6 +30,7 @@
 							<% end_if %>
 
 						<% end_loop %>
+						 <span class="stretch"></span>
 					</div>
 				</div>
 				<div class="col-sm-2 col-md-2">

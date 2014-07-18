@@ -47,6 +47,7 @@ body {
 }
 
 .footer {
+	background-color: gray-lighter;
 	// sticky footer settings
 	position: absolute;
 	width: 100%;
@@ -58,4 +59,31 @@ body {
 		bottom: auto;
 	}
 	
+}
+
+// References: http://css-tricks.com/equidistant-objects-with-css/, http://stackoverflow.com/questions/6865194/fluid-width-with-equally-spaced-divs
+
+.footer-wrapper {
+    width:100%;
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+
+    // for spacing the menu to the left of Contact link
+    padding-right: 30px;
+}
+
+.footer-box {
+   	display: inline-block;
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+}
+
+.stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0.1; /* IE 9/10 don't like font-size: 0; */
+    line-height: 0
 }
