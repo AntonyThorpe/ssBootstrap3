@@ -1158,24 +1158,31 @@ body {
     bottom: auto;
   }
 }
-.footer-wrapper {
-  width: 100%;
-  text-align: justify;
-  -ms-text-justify: distribute-all-lines;
-  text-justify: distribute-all-lines;
-  padding-right: 30px;
+@media (min-width: 768px) {
+  .footer-wrapper {
+    text-align: justify;
+    -ms-text-justify: distribute-all-lines;
+    text-justify: distribute-all-lines;
+  }
 }
-.footer-box {
-  vertical-align: top;
-  display: inline-block;
-  *display: inline;
-  zoom: 1;
+@media (min-width: 768px) {
+  .footer-column {
+    vertical-align: top;
+    display: inline-block;
+    *display: inline;
+    zoom: 1;
+  }
 }
-.stretch {
-  width: 100%;
-  display: inline-block;
-  font-size: 0.1;
-  /* IE 9/10 don't like font-size: 0; */
-
-  line-height: 0;
+@media (min-width: 768px) {
+  .stretch {
+    width: 100%;
+    display: inline-block;
+    font-size: 0.1;
+    /* IE 9/10 do not like font-size: 0; */
+  
+    line-height: 0;
+  }
+}
+@media (min-width: 768px) {
+  
 }
