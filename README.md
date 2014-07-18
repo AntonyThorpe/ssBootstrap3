@@ -35,7 +35,8 @@ http://stjameskidsway.org.nz/
 	Requirements::combine_files(
 		'combine.js',
 		 array(
-		 	'mysite/thirdparty/bower_components/jquery/dist/jquery.min.js'
+		 	'mysite/thirdparty/bower_components/jquery/dist/jquery.min.js',
+		 	'mysite/thirdparty/bower_components/jquerymigrate/index.js',
 
 		 	// comment out the javascript files not needed
 			'mysite/thirdparty/bower_components/bootstrap/js/affix.js',
@@ -89,7 +90,8 @@ Bootstrap's base variables impart at the start of each Less file.  These are ove
 			"dependencies": {
 				"bootstrap": ">= 3.2.0",
 				"html5shiv": "3.7.2",
-				"respond": "1.4.2" 
+				"respond": "1.4.2",
+				"jquerymigrate": "http://code.jquery.com/jquery-migrate-1.2.1.js" 
 			}
 		}
 
