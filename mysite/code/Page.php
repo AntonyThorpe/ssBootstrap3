@@ -34,7 +34,8 @@ class Page_Controller extends ContentController {
 		// support for HTML5 elements in older browsers (http://en.wikipedia.org/wiki/HTML5_Shiv).  Needs to be installed in the head.
 		Requirements::insertHeadTags('
 			<!--[if lt IE 9]>
-				<script type="text/javascript" src="mysite/thirdparty/bower_components/html5shiv/dist/html5shiv.js"></script>
+				<script type="text/javascript" src="mysite/thirdparty/bower_components/html5shiv/dist/html5shiv.min.js"></script>
+				<script type="text/javascript" src="mysite/thirdparty/bower_components/respond/dest/respond.min.js"></script>
 			<![endif]-->
 		', 'load js in head');
 
@@ -56,7 +57,7 @@ class Page_Controller extends ContentController {
 			'combine.js',
 			 array(
 			 	// jquery required for bs javascript
-			 	'mysite/thirdparty/bower_components/jquery/jquery.js',
+			 	'mysite/thirdparty/bower_components/jquery/dist/jquery.js',
 			 	'mysite/thirdparty/bower_components/jquery/jquery-migrate.js',
 
 			 	// comment out the javascript files not needed
