@@ -25,11 +25,14 @@ html {
 	min-height: 100%;
 }
 
+// Sticky footer settings
+@stickyFooterHeight: 155px;
+
 body {
 	
-	// Sticky footer settings
+	
 	/* Margin bottom by footer height */
-	margin-bottom: 185px;
+	margin-bottom: @stickyFooterHeight;
 
 	@media (max-width: @screen-sm-min) {   // Remove sticky footer settings for mobile 
 		margin-bottom: auto;
@@ -50,7 +53,7 @@ body {
 	// sticky footer settings
 	position: absolute;
 	width: 100%;
-	height: 185px;   /* same as the body margin-bottom */
+	height: @stickyFooterHeight;         /* same as the body margin-bottom */
 	bottom: 0;
 
 	@media (max-width: @screen-sm-min) {   // Remove sticky footer settings for mobile 

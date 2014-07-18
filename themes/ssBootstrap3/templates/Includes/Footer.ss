@@ -11,10 +11,9 @@
 				
 		</div> <!-- finish menu information -->
 
-		<hr>
 		<div class="clearfix row">
 			<div class="pull-left">
-				&copy; Your business name 
+				<small>&copy; Name 
 					<script type="text/javascript">
 					now = new Date
 					theYear=now.getYear()
@@ -22,6 +21,7 @@
 					theYear=theYear+1900
 					document.write(theYear)
 					</script>
+				</small>
 			</div>
 		</div>
 	</div>

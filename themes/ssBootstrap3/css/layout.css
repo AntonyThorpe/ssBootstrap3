@@ -1128,7 +1128,7 @@ html {
 body {
   /* Margin bottom by footer height */
 
-  margin-bottom: 185px;
+  margin-bottom: 155px;
 }
 @media (max-width: 768px) {
   body {
@@ -1146,7 +1146,7 @@ body {
 .footer {
   position: absolute;
   width: 100%;
-  height: 185px;
+  height: 155px;
   /* same as the body margin-bottom */
 
   bottom: 0;

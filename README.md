@@ -12,8 +12,11 @@ Originated from [ss-bootstrap] theme (https://github.com/gpmd/ss-bootstrap) - st
 * to wear flash pants
 
 
-## Instructions
+## In the Wild
+http://stjameskidsway.org.nz/
 
+
+## Instructions
 1. Download and copy the `ssBootstrap3` folder, under themes, into your `themes` folder
 2. Set `theme: 'ssBootstrap3'` in your `config.yml` file
 3. Open `mysite/Page.php` and add
@@ -53,8 +56,9 @@ Originated from [ss-bootstrap] theme (https://github.com/gpmd/ss-bootstrap) - st
 4. Copy the `thirdparty` folder to `mysite`.  This contains Bootstrap's javascript and Less.
 5. Run `/dev/build`.
 6. Optional
+ * Favicon/icon links are in templates/Page.ss file.  Upload your icon through http://realfavicongenerator.net/ and copy the generated icons to your project root.  Note that the tile colour for Windows 8 will need to be changed `<meta name="msapplication-TileColor" content="#fff">` in Page.ss.
  * Enable search in config `FulltextSearchable::enable();`
- * For older browsers include html5shiv.js to support HTML5 elements (folder: `mysite/thirdparty/bower_components/html5shiv/dist/html5shiv.js`).  
+ * For older browsers include html5shiv.js and respond.js to support HTML5 elements and page size media queries (see folder: `mysite/thirdparty/bower_components/`)
 
 
 ## Requirements
@@ -71,12 +75,12 @@ Bootstrap's base variables impart at the start of each Less file.  These are ove
  * `main.less` contains some basic styling for navigation, search, and the Blog module.
  * `form.less` contains some basic styling for forms.  
  * UserForms Module: for more control over presentation `UserDefinedForms.ss` page type is included under the `templates/layout` folder (remove $UserDefinedForm from within the CMS).  
- * `layout.ess` includes sticky footer settings
+ * `layout.less` includes sticky footer settings.  Adjust the variable @stickyFooterHeight to suit.
 
 
 ## Updating bootstrap
 * You can use Bower to upgrade Bootstrap and jQuery plus any other javascript libraries that you need to include.  See bower.io or this blog Bower, an asset package manager (http://www.synbioz.com/blog/bower) to get started.
-* Open `bower.json` located in `mysite/thirdparty` and update the version numbers.  You can find the latest library version numbers by opening a terminal `bower info bootstrap`.  If you need to find additional libraries: `bower search libraryName`.
+* Create a `bower.json` file in `mysite/thirdparty`.  Set the version numbers.  You can find the latest library version numbers by opening a terminal `bower info bootstrap`.  If you need to find additional libraries: `bower search libraryname`.
 
 		:::javascript
 		{
@@ -94,12 +98,11 @@ Bootstrap's base variables impart at the start of each Less file.  These are ove
 
 ## ToDo
 * There's probably a better way to reference a file location in the Less files than `@import "../../../mysite/thirdparty/bower_components/bootstrap/less/variables.less";`
-* Having trouble with the Blog Module
-* Link to a demo site
+* Blog Module needs testing
 
 
 ## Browser Support
-Does not support ie7.
+Does not support ie7 and below.
 
 
 ## Changelog
@@ -107,6 +110,8 @@ Does not support ie7.
 * Version 0.2 - upgraded to SS 3.1
 * Version 0.3 - upgraded Bootstrap to 3.1.1
 * Version 0.4 - improved styling for Userforms and sidebar menu
+* Version 0.5 - upgraded Bootstrap to 3.2.0, added a footer, and favicon/icons.
+
 
 ## License
 Provided 'as is' - have fun! [Bootstrap](https://github.com/twbs/bootstrap/blob/master/LICENSE) and [Boilerplate](https://github.com/h5bp/html5-boilerplate/blob/master/LICENSE.md) have their own licenses.
