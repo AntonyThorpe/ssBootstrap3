@@ -5,21 +5,13 @@
 			<div class="footer-wrapper">
 				<% loop $Menu(1) %>
 					<% include FooterColumn %>
-					
-					<% if $MenuTitle == "Contact" %>
-						<!-- social media -->
-
-					<% end_if %>
-					
 				<% end_loop %>
 				<span class="stretch"></span>
 			</div>
 				
 		</div> <!-- finish menu information -->
-	
 
 		<hr>
-	
 		<div class="clearfix row">
 			<div class="pull-left">
 				&copy; Your business name 

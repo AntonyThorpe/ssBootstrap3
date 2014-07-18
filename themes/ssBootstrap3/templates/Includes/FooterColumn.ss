@@ -12,6 +12,11 @@
 				    </a>
 				</li>
 			<% end_loop %>
+
+			<% if $MenuTitle == "Contact" %>
+				<!-- social media -->
+
+			<% end_if %>
 		</ul>
 	<% end_if %>
 

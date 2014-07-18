@@ -29,7 +29,7 @@ body {
 	
 	// Sticky footer settings
 	/* Margin bottom by footer height */
-	margin-bottom: 60px;
+	margin-bottom: 185px;
 
 	@media (max-width: @screen-sm-min) {   // Remove sticky footer settings for mobile 
 		margin-bottom: auto;
@@ -47,18 +47,18 @@ body {
 }
 
 .footer {
-	background-color: gray-lighter;
 	// sticky footer settings
 	position: absolute;
 	width: 100%;
-	height: 60px;   /* same as the body margin-bottom */
+	height: 185px;   /* same as the body margin-bottom */
 	bottom: 0;
 
 	@media (max-width: @screen-sm-min) {   // Remove sticky footer settings for mobile 
 		height: auto;
 		bottom: auto;
-	}
-	
+	}	
+
+	background: @grey-lighter;
 }
 
 // References: http://css-tricks.com/equidistant-objects-with-css/, http://stackoverflow.com/questions/6865194/fluid-width-with-equally-spaced-divs
