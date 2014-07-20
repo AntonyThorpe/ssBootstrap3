@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="$ContentLocale"> <![endif]-->
 <!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8" lang="$ContentLocale"> <![endif]-->
 <!--[if IE 8]> <html class="no-js lt-ie9" lang="$ContentLocale"> <![endif]-->
@@ -10,7 +10,6 @@
         $MetaTags(false)
         <% base_tag %>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="shortcut icon" href="$ThemeDir/favicon.ico" />
         
         <!--  Bookmarking favicons/icons for iOS/Android/Windows 8 tablets-->
         <meta name="mobile-web-app-capable" content="yes">
@@ -34,9 +33,6 @@
 
         <meta name="msapplication-TileImage" content="/mstile-144x144.png">
         <meta name="application-name" content="<% if MetaTitle %>$MetaTitle<% else %>$Title<% end_if %>">
-
-
-
 
     </head>
 
