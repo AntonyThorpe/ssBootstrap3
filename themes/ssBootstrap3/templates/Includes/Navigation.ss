@@ -21,10 +21,10 @@
                             <a class="navbar-link" href="$Link" title="$Title.XML">$MenuTitle.XML</a>
                         </li>
                     <% end_loop %>
-                </ul>
-                <% if $SearchForm %>
-                    $SearchForm
-                <% end_if %>
+                    <% if $SearchForm %>
+                        $SearchForm
+                    <% end_if %>
+                 </ul>
             </div>
         </div>
     </nav>

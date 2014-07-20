@@ -58,7 +58,7 @@ http://stjameskidsway.org.nz/
 5. Run `/dev/build`.
 6. Optional
  * Favicon/icon links are in templates/Page.ss file.  Upload your icon through http://realfavicongenerator.net/ and copy the generated icons to your project root.  Note that the tile colour for Windows 8 will need to be changed `<meta name="msapplication-TileColor" content="#fff">` in Page.ss.
- * Enable search in config `FulltextSearchable::enable();`
+ * Enable search in config `FulltextSearchable::enable();` (see http://doc.silverstripe.org/framework/en/tutorials/4-site-search)
  * For older browsers include html5shiv.js and respond.js to support HTML5 elements and page size media queries (see folder: `mysite/thirdparty/bower_components/`)
 
 
