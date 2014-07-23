@@ -1,31 +1,33 @@
-<div class="nav-container">
-    <nav class="navbar navbar-fixed-top navbar-inverse" role="navigation">
+<nav class="navbar-custom navbar-inverse" role="navigation">
+    <div class="container-fluid">
+
         <div class="navbar-header">
             
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <a class="navbar-brand" href="$BaseHref" rel="home">$SiteConfig.Title</a>
-
             <!-- Toggle -->
-            <button class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse-custom">
+                <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
+            
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <a class="navbar-brand" href="$BaseHref" rel="home">$SiteConfig.Title</a>
 
-        </div>
-        <div class="container">
-            <div class="navbar-collapse collapse">
-                <ul class="nav pull-left navbar-nav">
-                    <% loop $Menu(1) %>
-                        <li class="$LinkingMode">
-                            <a class="navbar-link" href="$Link" title="$Title.XML">$MenuTitle.XML</a>
-                        </li>
-                    <% end_loop %>
-                    <% if $SearchForm %>
+        </div><!-- /.navbar-header -->
+        <div class="navbar-collapse-custom collapse">
+            <ul class="nav navbar-nav-custom">
+                <% loop $Menu(1) %>
+                    <li class="$LinkingMode">
+                        <a class="navbar-link" href="$Link" title="$Title.XML">$MenuTitle</a>
+                    </li>
+                <% end_loop %>
+                <% if $SearchForm %>
+                    <li class="hidden-xs">
                         $SearchForm
-                    <% end_if %>
-                 </ul>
-            </div>
-        </div>
-    </nav>
-</div>
+                    </li>
+                <% end_if %>
+            </ul>
+        </div><!-- /.navbar-collapse -->
+    </div>
+</nav>

@@ -15,8 +15,10 @@
 @import "../../../mysite/thirdparty/bower_components/bootstrap/less/responsive-utilities.less";
 
 
-
-.sidebar {	padding-bottom: 9px; margin: 40px 0 20px;}
+// Layout Variables
+@stickyFooterHeight: 155px;
+@gapBetweenNavAndMain: 0px;
+@gapBetweenMainAndFooter: 20px;
 
 
 html {
@@ -24,9 +26,6 @@ html {
 	position: relative;
 	min-height: 100%;
 }
-
-// Sticky footer settings
-@stickyFooterHeight: 155px;
 
 body {
 	
@@ -42,31 +41,37 @@ body {
 }
 
 .main {
-	margin-top: 70px;
+	margin-top: @gapBetweenNavAndMain;
 	
 	@media (max-width: @screen-sm-min) {   // padding for mobile phones
 		padding: 0 20px;
 	}
 }
 
+.sidebar {	
+	padding-bottom: 9px;
+	margin: 40px 0 20px;
+}
+
 .footer {
 	// sticky footer settings
-	position: absolute;
-	width: 100%;
-	height: @stickyFooterHeight;         /* same as the body margin-bottom */
-	bottom: 0;
-
-	@media (max-width: @screen-sm-min) {   // Remove sticky footer settings for mobile 
-		height: auto;
-		bottom: auto;
-	}	
-
+	margin-top: @gapBetweenMainAndFooter;
+	height: auto;
+	bottom: auto;
 	background: @grey-lighter;
+	
+	@media (min-width: @screen-sm-min) {  /* Small devices (tablets, 768px and up) */
+		// sticky footer settings
+		position: absolute;
+		width: 100%;
+		height: @stickyFooterHeight;         /* same as the body margin-bottom */
+		bottom: 0;
+	}
 }
 
 // References: http://css-tricks.com/equidistant-objects-with-css/, http://stackoverflow.com/questions/6865194/fluid-width-with-equally-spaced-divs
 .footer-wrapper {
-    @media (min-width: @screen-sm-min) {   
+    @media (min-width: @screen-sm-min) {   /* Small devices (tablets, 768px and up) */
 		text-align: justify;
 	    -ms-text-justify: distribute-all-lines;
 	    text-justify: distribute-all-lines;
@@ -78,7 +83,7 @@ body {
 }
 
 .footer-column {
-	@media (min-width: @screen-sm-min) {
+	@media (min-width: @screen-sm-min) {	/* Small devices (tablets, 768px and up) */
 		display: inline-block;
 	    vertical-align: top;
 	    display: inline-block;
@@ -88,7 +93,7 @@ body {
 	}
    	
 }
-@media (min-width: @screen-sm-min) {
+@media (min-width: @screen-sm-min) {	/* Small devices (tablets, 768px and up) */
 	.stretch {
 	    width: 100%;
 	    display: inline-block;

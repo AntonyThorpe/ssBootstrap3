@@ -93,6 +93,40 @@
 	}
 }
 
+.navbar-custom {
+	.navbar;
+
+	margin-bottom: 0;
+
+	// Navigation height
+	@media (min-width: @screen-sm-min) {  /* Small devices (tablets, 768px and up) */
+		height: 80px;
+	}
+	// Note: use padding around .brand for mobile
+
+}
+
+.navbar-collapse-custom {
+	.navbar-collapse;
+
+	@media (min-width: @screen-sm-min) {  /* Small devices (tablets, 768px and up) */
+		padding-top: 25px;
+		padding-right: 0;
+	}
+	
+}
+
+.navbar-nav-custom {
+	.navbar-nav;
+
+	@media (min-width: @screen-sm-min) {  /* Small devices (tablets, 768px and up) */
+		.pull-right;
+	}
+
+}
+
+
+
 // Search
 #SearchForm_SearchForm {
 	input[type="text"] {
