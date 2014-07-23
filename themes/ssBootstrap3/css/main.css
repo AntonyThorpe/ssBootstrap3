@@ -3648,14 +3648,92 @@ a.list-group-item-danger.active:focus {
     float: right !important;
   }
 }
-#SearchForm_SearchForm input[type="text"] {
-  margin-top: 5px;
-  margin-bottom: 5px;
+.navbar-form-custom {
+  margin-left: -15px;
+  margin-right: -15px;
+  padding: 10px 15px;
+  border-top: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+  -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.1), 0 1px 0 rgba(255, 255, 255, 0.1);
+  margin-top: 8px;
+  margin-bottom: 8px;
+  padding-right: 0;
+  margin-right: 0;
 }
-#SearchForm_SearchForm input[type="submit"] {
-  padding: 5px 12px;
-  margin-top: 5px;
-  margin-bottom: 5px;
+@media (min-width: 768px) {
+  .navbar-form-custom .form-group {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .navbar-form-custom .form-control {
+    display: inline-block;
+    width: auto;
+    vertical-align: middle;
+  }
+  .navbar-form-custom .input-group {
+    display: inline-table;
+    vertical-align: middle;
+  }
+  .navbar-form-custom .input-group .input-group-addon,
+  .navbar-form-custom .input-group .input-group-btn,
+  .navbar-form-custom .input-group .form-control {
+    width: auto;
+  }
+  .navbar-form-custom .input-group > .form-control {
+    width: 100%;
+  }
+  .navbar-form-custom .control-label {
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .navbar-form-custom .radio,
+  .navbar-form-custom .checkbox {
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+    vertical-align: middle;
+  }
+  .navbar-form-custom .radio label,
+  .navbar-form-custom .checkbox label {
+    padding-left: 0;
+  }
+  .navbar-form-custom .radio input[type="radio"],
+  .navbar-form-custom .checkbox input[type="checkbox"] {
+    position: relative;
+    margin-left: 0;
+  }
+  .navbar-form-custom .has-feedback .form-control-feedback {
+    top: 0;
+  }
+}
+@media (max-width: 767px) {
+  .navbar-form-custom .form-group {
+    margin-bottom: 5px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-form-custom {
+    width: auto;
+    border: 0;
+    margin-left: 0;
+    margin-right: 0;
+    padding-top: 0;
+    padding-bottom: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+  }
+  .navbar-form-custom.navbar-right:last-child {
+    margin-right: -15px;
+  }
+}
+@media (min-width: 768px) {
+  .navbar-form-custom {
+    /* Small devices (tablets, 768px and up) */
+  
+    width: 160px;
+  }
 }
 /* 	==========================================================================
 	 Navs

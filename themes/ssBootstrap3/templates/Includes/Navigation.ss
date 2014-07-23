@@ -23,7 +23,7 @@
                     </li>
                 <% end_loop %>
                 <% if $SearchForm %>
-                    <li class="hidden-xs">
+                    <li>
                         $SearchForm
                     </li>
                 <% end_if %>

@@ -125,20 +125,19 @@
 
 }
 
+// adjust for search
+.navbar-form-custom {
+	.navbar-form;
+	
+	padding-right: 0;
+	margin-right: 0;
 
+	@media (min-width: @screen-sm-min) {  /* Small devices (tablets, 768px and up) */
+		width: 160px;
+	}
 
-// Search
-#SearchForm_SearchForm {
-	input[type="text"] {
-		margin-top: 5px;
-		margin-bottom: 5px;
-	}
-	input[type="submit"] {
-		padding: 5px 12px;
-		margin-top: 5px;
-		margin-bottom: 5px;
-	}
 }
+
 
 /* 	==========================================================================
 	 Navs
