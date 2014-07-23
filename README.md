@@ -69,14 +69,35 @@ Bootstrap's Less files are located under the theme's `less` folder.  Target the 
 
 
 ## Structure of the Less files
-Bootstrap's base variables impart at the start of each Less file.  These are overridden by `customVariables.less` before they go through Bootstrap's `mixins.less`.
+Bootstrap's base variables are imported at the start of each Less file.  These are overridden by `customVariables.less` before they go through Bootstrap's `mixins.less`.
 
 
 ## Basic styling and Silverstripe modules
  * `main.less` contains some basic styling for navigation, search, and the Blog module.
  * `form.less` contains some basic styling for forms.  
  * UserForms Module: for more control over presentation `UserDefinedForms.ss` page type is included under the `templates/layout` folder (remove $UserDefinedForm from within the CMS).  
- * `layout.less` includes sticky footer settings.  Adjust the variable @stickyFooterHeight to suit.
+ * `layout.less` includes sticky footer and height settings between the main body classes.  Adjust the variables @stickyFooterHeight, @gapBetweenNavAndMain and @gapBetweenMainAndFooter to suit.
+
+
+ ## Using Less with Media Queries (main.less & Navigation.ss as an example)
+ One way of using Less is to start with bootstrap's class and then you adjust the base styles, which are mobile first.  Then add media queries for wider screens.
+```css
+	.navbar-custom {
+		.navbar;
+
+		margin-bottom: 0;
+
+		// Navigation height
+		@media (min-width: @screen-sm-min) {  /* Small devices (tablets, 768px and up) */
+			height: 80px;
+		}
+	}
+```
+
+```html
+	<nav class="navbar-custom navbar-inverse" role="navigation">
+		...
+```
 
 
 ## Updating bootstrap
