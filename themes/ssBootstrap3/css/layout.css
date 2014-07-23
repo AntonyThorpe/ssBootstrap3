@@ -1117,10 +1117,6 @@ table th[class*="col-"] {
     display: none !important;
   }
 }
-.sidebar {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
-}
 html {
   position: relative;
   min-height: 100%;
@@ -1136,30 +1132,39 @@ body {
   }
 }
 .main {
-  margin-top: 70px;
+  margin-top: 0px;
 }
 @media (max-width: 768px) {
   .main {
     padding: 0 20px;
   }
 }
+.sidebar {
+  padding-bottom: 9px;
+  margin: 40px 0 20px;
+}
 .footer {
-  position: absolute;
-  width: 100%;
-  height: 155px;
-  /* same as the body margin-bottom */
-
-  bottom: 0;
+  margin-top: 20px;
+  height: auto;
+  bottom: auto;
   background: #eeeeee;
 }
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   .footer {
-    height: auto;
-    bottom: auto;
+    /* Small devices (tablets, 768px and up) */
+  
+    position: absolute;
+    width: 100%;
+    height: 155px;
+    /* same as the body margin-bottom */
+  
+    bottom: 0;
   }
 }
 @media (min-width: 768px) {
   .footer-wrapper {
+    /* Small devices (tablets, 768px and up) */
+  
     text-align: justify;
     -ms-text-justify: distribute-all-lines;
     text-justify: distribute-all-lines;
@@ -1167,6 +1172,8 @@ body {
 }
 @media (min-width: 768px) {
   .footer-column {
+    /* Small devices (tablets, 768px and up) */
+  
     vertical-align: top;
     display: inline-block;
     *display: inline;
@@ -1174,6 +1181,7 @@ body {
   }
 }
 @media (min-width: 768px) {
+  /* Small devices (tablets, 768px and up) */
   .stretch {
     width: 100%;
     display: inline-block;

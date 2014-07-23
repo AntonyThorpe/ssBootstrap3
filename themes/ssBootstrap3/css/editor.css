@@ -1041,3 +1041,6 @@ body.mceContentBody {
   padding: 20px;
   font-size: 14px;
 }
+.typography .page-header {
+  margin: 0 0 20px;
+}

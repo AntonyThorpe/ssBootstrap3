@@ -47,7 +47,7 @@
                 <% include BreadCrumbs %>
                 $Layout
             </div>
-        </div>
+        </main>
         <% include Footer %>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
