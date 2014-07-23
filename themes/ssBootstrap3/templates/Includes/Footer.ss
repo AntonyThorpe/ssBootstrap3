@@ -1,6 +1,6 @@
 <footer class="footer typography" role="contentinfo">
-	<div class="container">
-		<div class="clearfix row">
+	<div class="container-fluid">
+		<div>
 			
 			<div class="footer-wrapper">
 				<% loop $Menu(1) %>
