@@ -28,10 +28,11 @@ html {
 }
 
 body {
-	
-	
+
+
 	/* Margin bottom by footer height */
 	margin-bottom: @stickyFooterHeight;
+	min-height: 600px;
 
 	@media (max-width: @screen-sm-min) {   // Remove sticky footer settings for mobile 
 		margin-bottom: auto;
@@ -69,6 +70,8 @@ body {
 	}
 }
 
+
+// Layout for Footer
 // References: http://css-tricks.com/equidistant-objects-with-css/, http://stackoverflow.com/questions/6865194/fluid-width-with-equally-spaced-divs
 .footer-wrapper {
     @media (min-width: @screen-sm-min) {   /* Small devices (tablets, 768px and up) */

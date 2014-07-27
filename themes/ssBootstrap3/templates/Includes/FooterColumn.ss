@@ -24,11 +24,11 @@
 		<% if $MenuTitle == "Contact" %>
 			<li>
 				<div>
-					<a href="https://twitter.com/ecoboil" >
-						<img src="$ThemeDir/zurb_webicons/images/fc-webicon-twitter-s.png"/>
+					<a href="" >
+						<img src="" />
 					</a>
-					<a href="http://www.facebook.com/pages/Ecoboil/547290941959246">
-						<img src="$ThemeDir/zurb_webicons/images/fc-webicon-facebook-s.png" />
+					<a href="">
+						<img src="" />
 					</a> 
 				</div>
 			</li>

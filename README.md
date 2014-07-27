@@ -25,10 +25,8 @@ http://stjameskidsway.org.nz/
 	Requirements::combine_files(
 		'combined.css',
 		array(
-			THEMES_DIR . '/' . $theme . '/css/main.css',
-			THEMES_DIR . '/' . $theme . '/css/layout.css',
-			THEMES_DIR . '/' . $theme . '/css/editor.css', // includes Typography
-			THEMES_DIR . '/' . $theme . '/css/form.css',
+			THEMES_DIR . '/' . $theme . '/css/main.css'
+
 		)
 	);
         
