@@ -1393,7 +1393,7 @@ table th[class*="col-"] {
   
     /* Margin bottom by footer height */
   
-    margin-bottom: 155px;
+    margin-bottom: 155px !important;
   }
 }
 .main {
