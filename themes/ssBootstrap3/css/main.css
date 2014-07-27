@@ -1398,18 +1398,13 @@ table th[class*="col-"] {
 }
 .main {
   margin-top: 0px;
-}
-@media (max-width: 768px) {
-  .main {
-    padding: 0 20px;
-  }
+  padding-bottom: 20px;
 }
 .sidebar {
   padding-bottom: 9px;
   margin: 40px 0 20px;
 }
 .footer {
-  margin-top: 20px;
   background: #eeeeee;
 }
 @media (min-width: 768px) {
