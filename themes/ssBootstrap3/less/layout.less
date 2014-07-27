@@ -23,22 +23,19 @@
 
 html {
 	// Sticky footer settigs
-	position: relative;
-	min-height: 100%;
+	@media (min-width: @screen-sm-min) {  /* Small devices (tablets, 768px and up) */
+		position: relative;
+		min-height: 100%;
+	}	
 }
 
 body {
-
-
-	/* Margin bottom by footer height */
-	margin-bottom: @stickyFooterHeight;
-	min-height: 600px;
-
-	@media (max-width: @screen-sm-min) {   // Remove sticky footer settings for mobile 
-		margin-bottom: auto;
+	// sticky footer settings
+	@media (min-width: @screen-sm-min) {  /* Small devices (tablets, 768px and up) */
+		/* Margin bottom by footer height */
+		margin-bottom: @stickyFooterHeight;
 	}
 
-	
 }
 
 .main {
@@ -55,18 +52,16 @@ body {
 }
 
 .footer {
-	// sticky footer settings
 	margin-top: @gapBetweenMainAndFooter;
-	height: auto;
-	bottom: auto;
 	background: @grey-lighter;
 	
+	// sticky footer settings
 	@media (min-width: @screen-sm-min) {  /* Small devices (tablets, 768px and up) */
-		// sticky footer settings
 		position: absolute;
+		bottom: 0;
 		width: 100%;
 		height: @stickyFooterHeight;         /* same as the body margin-bottom */
-		bottom: 0;
+		
 	}
 }
 

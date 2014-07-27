@@ -1379,19 +1379,21 @@ table th[class*="col-"] {
     display: none !important;
   }
 }
-html {
-  position: relative;
-  min-height: 100%;
+@media (min-width: 768px) {
+  html {
+    /* Small devices (tablets, 768px and up) */
+  
+    position: relative;
+    min-height: 100%;
+  }
 }
-body {
-  /* Margin bottom by footer height */
-
-  margin-bottom: 155px;
-  min-height: 600px;
-}
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   body {
-    margin-bottom: auto;
+    /* Small devices (tablets, 768px and up) */
+  
+    /* Margin bottom by footer height */
+  
+    margin-bottom: 155px;
   }
 }
 .main {
@@ -1408,8 +1410,6 @@ body {
 }
 .footer {
   margin-top: 20px;
-  height: auto;
-  bottom: auto;
   background: #eeeeee;
 }
 @media (min-width: 768px) {
@@ -1417,11 +1417,11 @@ body {
     /* Small devices (tablets, 768px and up) */
   
     position: absolute;
+    bottom: 0;
     width: 100%;
     height: 155px;
     /* same as the body margin-bottom */
   
-    bottom: 0;
   }
 }
 @media (min-width: 768px) {
