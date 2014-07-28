@@ -72,9 +72,31 @@ Bootstrap's base variables are imported at the start of each Less file.  These a
 
 ## Basic styling and Silverstripe modules
  * `main.less` contains some basic styling for navigation, search, and the Blog module.
- * `form.less` contains some basic styling for forms.  
- * UserForms Module: for more control over presentation `UserDefinedForms.ss` page type is included under the `templates/layout` folder (remove $UserDefinedForm from within the CMS).  
- * `layout.less` includes sticky footer and height settings between the main body classes.  Adjust the variables @stickyFooterHeight, @gapBetweenNavAndMain and @gapBetweenMainAndFooter to suit.
+ * `form.less` contains some basic styling for forms.    
+ * `layout.less` includes sticky footer and padding/margin settings between the main body classes.  Adjust the variables @stickyFooterHeight and @gapBetweenNavAndMain to suit.
+
+
+## Silverstripe modules
+ * UserForms Module: for more control over presentation `UserDefinedForms.ss` page type is included under the `templates/layout` folder (remove $UserDefinedForm from within the CMS).  To further customise extend UserDefinedForm (which extends the Page).  e.g. Save UserDefinedFormExtension.php:
+```php
+	class UserDefinedFormExtension extends DataExtension {
+
+	// add an upload field for a picture
+	private static $has_one = array(
+        'Image' => 'Image'
+    );
+
+	public function updateCMSFields(FieldList $fields) {
+        $fields->push(new UploadField('Image', 'Scenic Image'));
+    }
+}
+```
+And, in `config.yml`add:
+```yml
+	UserDefinedForm:
+  	  extensions:
+        - UserDefinedFormExtension
+```
 
 
  ## Using Less with Media Queries (main.less & Navigation.ss as an example)
@@ -91,6 +113,7 @@ Bootstrap's base variables are imported at the start of each Less file.  These a
 		}
 	}
 ```
+
 
 ```html
 	<nav class="navbar-custom navbar-inverse" role="navigation">
