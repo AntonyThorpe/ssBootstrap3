@@ -38,12 +38,12 @@
 
     <body class="$ClassName<% if not $Menu(2) %> no-sidebar<% end_if %>" id="$URLSegment">
 
-        <% include Navigation %>
+        <% include Header %>
        
-        <main class="main" role="main">
-            <% include Header %>
+        <main class="main" role="main">        
             
-            <div class="typography container <% if $Menu(2) || ClassName = BlogHolder || ClassName = BlogEntry %><% end_if %>" >
+            <div class="typography container-fluid <% if $Menu(2) || ClassName = BlogHolder || ClassName = BlogEntry %><% end_if %>" >
+
                 <% include BreadCrumbs %>
                 $Layout
             </div>
