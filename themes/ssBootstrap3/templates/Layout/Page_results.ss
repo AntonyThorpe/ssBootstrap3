@@ -1,4 +1,4 @@
-<div id="Content" class="searchResults">
+<div class="searchResults">
     <div class="page-header">
         <h1>$Title</h1>
     </div>
@@ -9,7 +9,7 @@
     <div id="SearchResults">
         <% loop $Results %>
         <div class="well">
-            <h4>
+            <h3>
                 <a href="$Link">
                     <% if $MenuTitle %>
                     $MenuTitle
@@ -17,12 +17,13 @@
                     $Title
                     <% end_if %>
                 </a>
-            </h4>
+            </h3>
             <% if $Content %>
             <p>$Content.LimitWordCountXML</p>
             <% end_if %>
             <a class="readMoreLink" href="$Link" title="Read more about &quot;{$Title}&quot;">Read more about &quot;{$Title}&quot;...</a>
         </div>
+        <hr>
         <% end_loop %>
     </div>
     <% else %>
