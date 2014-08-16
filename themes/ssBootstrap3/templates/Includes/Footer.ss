@@ -1,5 +1,5 @@
 <footer class="footer typography" role="contentinfo">
-	<div class="container-fluid">
+	<div class="container-fluid-custom">
 		<div>
 			
 			<div class="footer-wrapper">

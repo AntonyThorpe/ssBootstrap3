@@ -42,7 +42,7 @@
        
         <main class="main" role="main">        
             
-            <div class="typography container-fluid <% if $Menu(2) || ClassName = BlogHolder || ClassName = BlogEntry %><% end_if %>" >
+            <div class="typography container-fluid-custom <% if $Menu(2) || ClassName = BlogHolder || ClassName = BlogEntry %><% end_if %>" >
 
                 <% include BreadCrumbs %>
                 $Layout

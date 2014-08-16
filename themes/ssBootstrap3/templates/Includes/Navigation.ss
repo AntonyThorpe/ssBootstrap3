@@ -1,5 +1,5 @@
 <nav class="navbar-custom navbar-inverse" role="navigation">
-    <div class="container-fluid">
+    <div class="container-fluid-custom">
 
         <div class="navbar-header">
             

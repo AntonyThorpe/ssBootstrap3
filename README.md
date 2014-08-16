@@ -73,7 +73,31 @@ Bootstrap's base variables are imported at the start of each Less file.  These a
 ## Basic styling and Silverstripe modules
  * `main.less` contains some basic styling for navigation, search, and the Blog module.
  * `form.less` contains some basic styling for forms.    
- * `layout.less` includes sticky footer and padding/margin settings between the main body classes.  Adjust the variables @stickyFooterHeight and @gapBetweenNavAndMain to suit.
+ * `layout.less` includes sticky footer and padding/margin settings between the main body classes.  Adjust the variables @stickyFooterHeight and @gapBetweenNavAndMain to suit.  
+
+ A pattern that can be used is to copy Bootstrap's style, in a new class, and customise.  Examples below.
+ ```css
+ 	.container-fluid-custom{
+ 		.container-fluid;  // copy bootstraps class
+
+ 		// customise
+ 		padding-left: 30px;
+ 		padding-right: 30px;
+ 	}
+
+ 	.table-custom {
+ 		.table;
+ 		.table-striped;
+ 		.table-hover;
+ 		.table-bordered;
+ 		.table-condensed;
+ 		.table-responsive;
+
+ 		thead > tr > th {
+ 			vertical-align: top;
+ 		}
+ 	}
+ ```
 
 
 ## Silverstripe modules

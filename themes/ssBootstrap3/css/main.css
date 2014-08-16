@@ -1396,6 +1396,26 @@ table th[class*="col-"] {
     margin-bottom: 155px !important;
   }
 }
+.container-fluid-custom {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+.container-fluid-custom > .navbar-header,
+.container-fluid-custom > .navbar-collapse {
+  margin-right: -15px;
+  margin-left: -15px;
+}
+@media (min-width: 768px) {
+  .container-fluid-custom > .navbar-header,
+  .container-fluid-custom > .navbar-collapse {
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
 .main {
   margin-top: 0px;
   padding-bottom: 20px;
@@ -6545,6 +6565,8 @@ a.list-group-item-danger.active:focus {
 .container-fluid:after,
 .row:before,
 .row:after,
+.container-fluid-custom:before,
+.container-fluid-custom:after,
 .typography .dl-horizontal dd:before,
 .typography .dl-horizontal dd:after,
 .form-horizontal .form-group:before,
@@ -6578,6 +6600,7 @@ a.list-group-item-danger.active:focus {
 .container:after,
 .container-fluid:after,
 .row:after,
+.container-fluid-custom:after,
 .typography .dl-horizontal dd:after,
 .form-horizontal .form-group:after,
 .btn-toolbar:after,
