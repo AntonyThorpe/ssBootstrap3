@@ -157,6 +157,67 @@
 	padding-right: 15px !important;
 }
 
+// SideBar
+.nav-pills-stacked-custom {
+	.nav-pills;
+	.nav-stacked;
+
+	li {
+		background-color: @brand-primary;
+		margin-left: 0;
+		width: 100%;
+		border-bottom:thin solid @grey-dark;
+		
+	}
+
+	li + li {
+		margin-left: 0;
+		margin-top:0;
+
+		// if children, provide some below
+		.section {
+			margin-bottom: 2px;
+		}
+	}
+
+		
+	li > a {
+		color: white;
+		padding: 5px 5px;
+	}
+
+	li a:hover{
+		color: darken(@brand-primary, 10%);
+		border-radius: 0;
+	}
+	
+	li.current {
+		background-color: darken(@brand-primary, 10%)
+	}
+
+	// position Menu(3) horisontally
+	li > ul {
+		margin-left: -20px;
+	}
+
+	// Menu(3) links vertically align
+	li > ul > li > a {
+		padding-left: 1px;
+		margin-right: 1px;
+	}
+
+	// Menu(3) padding
+	li > ul > li {
+		padding-top: 3px;
+		padding-bottom: 3px;
+	}
+
+	// remove border from last child of Menu(3)
+	li > ul > li:last-child {
+		border-bottom: none;
+	}
+}
+
 
 /* 	Lists
 	========================================================================== */

@@ -6856,6 +6856,66 @@ a.list-group-item-danger.active:focus {
   padding-left: 15px !important;
   padding-right: 15px !important;
 }
+.nav-pills-stacked-custom > li {
+  float: left;
+}
+.nav-pills-stacked-custom > li > a {
+  border-radius: 4px;
+}
+.nav-pills-stacked-custom > li + li {
+  margin-left: 2px;
+}
+.nav-pills-stacked-custom > li.active > a,
+.nav-pills-stacked-custom > li.active > a:hover,
+.nav-pills-stacked-custom > li.active > a:focus {
+  color: #ffffff;
+  background-color: #428bca;
+}
+.nav-pills-stacked-custom > li {
+  float: none;
+}
+.nav-pills-stacked-custom > li + li {
+  margin-top: 2px;
+  margin-left: 0;
+}
+.nav-pills-stacked-custom li {
+  background-color: #428bca;
+  margin-left: 0;
+  width: 100%;
+  border-bottom: thin solid #333333;
+}
+.nav-pills-stacked-custom li + li {
+  margin-left: 0;
+  margin-top: 0;
+}
+.nav-pills-stacked-custom li + li .section {
+  margin-bottom: 2px;
+}
+.nav-pills-stacked-custom li > a {
+  color: white;
+  padding: 5px 5px;
+}
+.nav-pills-stacked-custom li a:hover {
+  color: #3071a9;
+  border-radius: 0;
+}
+.nav-pills-stacked-custom li.current {
+  background-color: #3071a9;
+}
+.nav-pills-stacked-custom li > ul {
+  margin-left: -20px;
+}
+.nav-pills-stacked-custom li > ul > li > a {
+  padding-left: 1px;
+  margin-right: 1px;
+}
+.nav-pills-stacked-custom li > ul > li {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+.nav-pills-stacked-custom li > ul > li:last-child {
+  border-bottom: none;
+}
 /* 	Lists
 	========================================================================== */
 li {

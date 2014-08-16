@@ -3,8 +3,8 @@
 <% if $Children %>
 	<% loop $Children %>
 		<li class="$LinkingMode">
-		    <a href="$Link" class="$LinkingMode" title="$Title.XML">
-		        $MenuTitle.XML
+		    <a href="$Link" class="$LinkingMode" title="$Title">
+		        $MenuTitle
 		    </a>
 		    <% if $Children %>
 			    <ul class="nav nav-list">

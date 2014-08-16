@@ -1,15 +1,15 @@
 <%--Include SidebarMenu recursively --%>
-<% if $Children %>
-<% loop $Children %>
-<li class="$LinkingMode">
-    <a href="$Link" class="$LinkingMode" title="$Title.XML">
-        $MenuTitle.XML
-    </a>
-    <% if $Children %>
-    <ul class="nav">
-        <% include SidebarMenu %>
-    </ul>
-    <% end_if %>
-</li>
-<% end_loop %>
-<% end_if %>
+	<ul class="nav nav-pills-stacked-custom">
+		<% loop $Children %>
+			<li class="$LinkingMode">
+			    <a href="$Link" class="$LinkingMode" title="$Title">
+			        $MenuTitle
+			    </a>
+			    <% if $Children %>
+				    <ul>
+				        <% include SidebarMenu %>
+				    </ul>
+			    <% end_if %>
+			</li>
+		<% end_loop %>
+	</ul>
