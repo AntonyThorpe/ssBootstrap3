@@ -55,7 +55,6 @@ class Page_Controller extends ContentController {
 			 array(
 			 	// jquery required for bs javascript
 			 	'mysite/thirdparty/bower_components/jquery/dist/jquery.js',	// v2
-			 	'mysite/thirdparty/bower_components/jquerymigrate/index.js', // https://github.com/jquery/jquery-migrate/#readme
 
 			 	// comment out the javascript files not needed
 				'mysite/thirdparty/bower_components/bootstrap/js/affix.js',

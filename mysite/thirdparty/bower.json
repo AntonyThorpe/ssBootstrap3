@@ -2,9 +2,8 @@
 	"name": "ssBootstrap3theme",
 	"version": "0.0.0",
 	"dependencies": {
-		"bootstrap": "3.2.0",
+		"bootstrap": "3.3.2",
 		"html5shiv": "3.7.2",
-		"respond": "1.4.2",
-		"jquerymigrate": "http://code.jquery.com/jquery-migrate-1.2.1.js"
+		"respond": "1.4.2"
 	}
 }

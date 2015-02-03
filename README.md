@@ -34,7 +34,6 @@ http://stjameskidsway.org.nz/
 		'combine.js',
 		 array(
 		 	'mysite/thirdparty/bower_components/jquery/dist/jquery.min.js',
-		 	'mysite/thirdparty/bower_components/jquerymigrate/index.js',
 
 		 	// comment out the javascript files not needed
 			'mysite/thirdparty/bower_components/bootstrap/js/affix.js',
@@ -154,10 +153,9 @@ And, in `config.yml`add:
 			"name": "yourProjectName",
 			"version": "0.0.0",
 			"dependencies": {
-				"bootstrap": ">= 3.2.0",
+				"bootstrap": ">= 3.3.0",
 				"html5shiv": "3.7.2",
-				"respond": "1.4.2",
-				"jquerymigrate": "http://code.jquery.com/jquery-migrate-1.2.1.js" 
+				"respond": "1.4.2"
 			}
 		}
 
@@ -179,6 +177,7 @@ Does not support ie7 and below.
 * Version 0.3 - upgraded Bootstrap to 3.1.1
 * Version 0.4 - improved styling for Userforms and sidebar menu
 * Version 0.5 - upgraded Bootstrap to 3.2.0, added a footer, and favicon/icons.
+* Version 0.6 - upgraded Bootstrap to 3.3.2, removed jquery migrate
 
 
 ## License
