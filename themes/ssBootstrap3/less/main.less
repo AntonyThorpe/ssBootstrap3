@@ -219,13 +219,45 @@
 }
 
 
+// Evenly spaced navigation lists
+
+nav.evenly-spaced, footer.evenly-spaced {
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+}
+ 
+nav.evenly-spaced ul, footer.evenly-spaced ul {
+    display: table-row;
+    margin: 0 auto;
+    padding: 0;
+
+    h4 {
+    	min-height: 55px;
+    }
+}
+ 
+nav.evenly-spaced ul li, footer.evenly-spaced ul li {
+    list-style: none;
+    display: table-cell;
+    text-align: center;
+}
+ 
+nav.evenly-spaced ul li a, footer.evenly-spaced ul li a {
+    display: block;
+    margin: 0 auto;
+}
+
+
 /* 	Lists
 	========================================================================== */
 
 // Unordered and Ordered lists
-li {
+.nav > li, .sidebar > li {
 	list-style: none;
 }
+
+
 
 /* 	Other
 	========================================================================== */

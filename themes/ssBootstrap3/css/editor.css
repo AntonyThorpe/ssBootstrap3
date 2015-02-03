@@ -150,9 +150,6 @@
 .typography .small {
   font-size: 85%;
 }
-.typography cite {
-  font-style: normal;
-}
 .typography mark,
 .typography .mark {
   background-color: #fcf8e3;
@@ -186,10 +183,10 @@
   color: #777777;
 }
 .typography .text-primary {
-  color: #428bca;
+  color: #337ab7;
 }
 a.typography .text-primary:hover {
-  color: #3071a9;
+  color: #286090;
 }
 .typography .text-success {
   color: #3c763d;
@@ -217,10 +214,10 @@ a.typography .text-danger:hover {
 }
 .typography .bg-primary {
   color: #fff;
-  background-color: #428bca;
+  background-color: #337ab7;
 }
 a.typography .bg-primary:hover {
-  background-color: #3071a9;
+  background-color: #286090;
 }
 .typography .bg-success {
   background-color: #dff0d8;
@@ -361,10 +358,6 @@ a.typography .bg-danger:hover {
 .typography blockquote.pull-right .small:after {
   content: '\00A0 \2014';
 }
-.typography blockquote:before,
-.typography blockquote:after {
-  content: "";
-}
 .typography address {
   margin-bottom: 20px;
   font-style: normal;
@@ -394,6 +387,7 @@ a.typography .bg-danger:hover {
 .typography kbd kbd {
   padding: 0;
   font-size: 100%;
+  font-weight: bold;
   box-shadow: none;
 }
 .typography pre {
@@ -424,7 +418,7 @@ a.typography .bg-danger:hover {
 @font-face {
   font-family: 'Glyphicons Halflings';
   src: url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot');
-  src: url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
+  src: url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.eot?#iefix') format('embedded-opentype'), url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff2') format('woff2'), url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.woff') format('woff'), url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.ttf') format('truetype'), url('../../../mysite/thirdparty/bower_components/bootstrap/fonts/glyphicons-halflings-regular.svg#glyphicons_halflingsregular') format('svg');
 }
 .typography .glyphicon {
   position: relative;
@@ -443,7 +437,8 @@ a.typography .bg-danger:hover {
 .typography .glyphicon-plus:before {
   content: "\2b";
 }
-.typography .glyphicon-euro:before {
+.typography .glyphicon-euro:before,
+.typography .glyphicon-eur:before {
   content: "\20ac";
 }
 .typography .glyphicon-minus:before {
@@ -1036,6 +1031,180 @@ a.typography .bg-danger:hover {
 }
 .typography .glyphicon-tree-deciduous:before {
   content: "\e200";
+}
+.typography .glyphicon-cd:before {
+  content: "\e201";
+}
+.typography .glyphicon-save-file:before {
+  content: "\e202";
+}
+.typography .glyphicon-open-file:before {
+  content: "\e203";
+}
+.typography .glyphicon-level-up:before {
+  content: "\e204";
+}
+.typography .glyphicon-copy:before {
+  content: "\e205";
+}
+.typography .glyphicon-paste:before {
+  content: "\e206";
+}
+.typography .glyphicon-alert:before {
+  content: "\e209";
+}
+.typography .glyphicon-equalizer:before {
+  content: "\e210";
+}
+.typography .glyphicon-king:before {
+  content: "\e211";
+}
+.typography .glyphicon-queen:before {
+  content: "\e212";
+}
+.typography .glyphicon-pawn:before {
+  content: "\e213";
+}
+.typography .glyphicon-bishop:before {
+  content: "\e214";
+}
+.typography .glyphicon-knight:before {
+  content: "\e215";
+}
+.typography .glyphicon-baby-formula:before {
+  content: "\e216";
+}
+.typography .glyphicon-tent:before {
+  content: "\26fa";
+}
+.typography .glyphicon-blackboard:before {
+  content: "\e218";
+}
+.typography .glyphicon-bed:before {
+  content: "\e219";
+}
+.typography .glyphicon-apple:before {
+  content: "\f8ff";
+}
+.typography .glyphicon-erase:before {
+  content: "\e221";
+}
+.typography .glyphicon-hourglass:before {
+  content: "\231b";
+}
+.typography .glyphicon-lamp:before {
+  content: "\e223";
+}
+.typography .glyphicon-duplicate:before {
+  content: "\e224";
+}
+.typography .glyphicon-piggy-bank:before {
+  content: "\e225";
+}
+.typography .glyphicon-scissors:before {
+  content: "\e226";
+}
+.typography .glyphicon-bitcoin:before {
+  content: "\e227";
+}
+.typography .glyphicon-yen:before {
+  content: "\00a5";
+}
+.typography .glyphicon-ruble:before {
+  content: "\20bd";
+}
+.typography .glyphicon-scale:before {
+  content: "\e230";
+}
+.typography .glyphicon-ice-lolly:before {
+  content: "\e231";
+}
+.typography .glyphicon-ice-lolly-tasted:before {
+  content: "\e232";
+}
+.typography .glyphicon-education:before {
+  content: "\e233";
+}
+.typography .glyphicon-option-horizontal:before {
+  content: "\e234";
+}
+.typography .glyphicon-option-vertical:before {
+  content: "\e235";
+}
+.typography .glyphicon-menu-hamburger:before {
+  content: "\e236";
+}
+.typography .glyphicon-modal-window:before {
+  content: "\e237";
+}
+.typography .glyphicon-oil:before {
+  content: "\e238";
+}
+.typography .glyphicon-grain:before {
+  content: "\e239";
+}
+.typography .glyphicon-sunglasses:before {
+  content: "\e240";
+}
+.typography .glyphicon-text-size:before {
+  content: "\e241";
+}
+.typography .glyphicon-text-color:before {
+  content: "\e242";
+}
+.typography .glyphicon-text-background:before {
+  content: "\e243";
+}
+.typography .glyphicon-object-align-top:before {
+  content: "\e244";
+}
+.typography .glyphicon-object-align-bottom:before {
+  content: "\e245";
+}
+.typography .glyphicon-object-align-horizontal:before {
+  content: "\e246";
+}
+.typography .glyphicon-object-align-left:before {
+  content: "\e247";
+}
+.typography .glyphicon-object-align-vertical:before {
+  content: "\e248";
+}
+.typography .glyphicon-object-align-right:before {
+  content: "\e249";
+}
+.typography .glyphicon-triangle-right:before {
+  content: "\e250";
+}
+.typography .glyphicon-triangle-left:before {
+  content: "\e251";
+}
+.typography .glyphicon-triangle-bottom:before {
+  content: "\e252";
+}
+.typography .glyphicon-triangle-top:before {
+  content: "\e253";
+}
+.typography .glyphicon-console:before {
+  content: "\e254";
+}
+.typography .glyphicon-superscript:before {
+  content: "\e255";
+}
+.typography .glyphicon-subscript:before {
+  content: "\e256";
+}
+.typography .glyphicon-menu-left:before {
+  content: "\e257";
+}
+.typography .glyphicon-menu-right:before {
+  content: "\e258";
+}
+.typography .glyphicon-menu-down:before {
+  content: "\e259";
+}
+.typography .glyphicon-menu-up:before {
+  content: "\e260";
 }
 body.mceContentBody {
   padding: 20px;
