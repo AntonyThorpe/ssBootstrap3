@@ -4374,6 +4374,9 @@ fieldset[disabled] form textarea {
 textareaform textarea {
   height: auto;
 }
+form input[type="text"] {
+  height: inherit;
+}
 .requiredField .help-block,
 .requiredField .control-label,
 .requiredField .radio,
