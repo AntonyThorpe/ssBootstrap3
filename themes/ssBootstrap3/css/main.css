@@ -4374,7 +4374,7 @@ fieldset[disabled] form textarea {
 textareaform textarea {
   height: auto;
 }
-form input[type="text"] {
+form input[type="search"] {
   height: inherit;
 }
 .requiredField .help-block,
