@@ -38,7 +38,7 @@ http://stjameskidsway.org.nz/
 		 	// comment out the javascript files not needed
 			'mysite/thirdparty/bower_components/bootstrap/js/affix.js',
 			'mysite/thirdparty/bower_components/bootstrap/js/alert.js',
-			'mysite/thirdparty/bower_components/bootstrap/js/botton.js',
+			'mysite/thirdparty/bower_components/bootstrap/js/button.js',
 			'mysite/thirdparty/bower_components/bootstrap/js/carousel.js',
 			'mysite/thirdparty/bower_components/bootstrap/js/transition.js',
 			'mysite/thirdparty/bower_components/bootstrap/js/collapse.js', // depends on transition.js
@@ -153,7 +153,7 @@ And, in `config.yml`add:
 			"name": "yourProjectName",
 			"version": "0.0.0",
 			"dependencies": {
-				"bootstrap": ">= 3.3.0",
+				"bootstrap": "3.3.5",
 				"html5shiv": "3.7.2",
 				"respond": "1.4.2"
 			}
@@ -178,6 +178,7 @@ Does not support ie7 and below.
 * Version 0.4 - improved styling for Userforms and sidebar menu
 * Version 0.5 - upgraded Bootstrap to 3.2.0, added a footer, and favicon/icons.
 * Version 0.6 - upgraded Bootstrap to 3.3.2, removed jquery migrate
+* Version 0.6.1 - upgraded Bootstrap to 3.3.5
 
 
 ## License

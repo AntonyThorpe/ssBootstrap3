@@ -96,3 +96,73 @@ input.required, select.required, textarea.required {
 }
 
 
+
+/* ==========================================================================
+   User Defined Form styling
+   ========================================================================== */
+
+.UserDefinedForm {
+    form{
+        .form-horizontal;
+
+        .field.text, .field.textarea{
+            .form-group;
+            label{
+                // set col-sm-2 & col-md-2
+                .make-sm-column(2);
+                .make-md-column(2);
+                text-align: right;
+                margin-bottom: 0;
+                padding-top: 7px;
+
+            }
+            .middleColumn{
+                // set col-sm-6 & col-md-6
+                .make-sm-column(6);
+                .make-md-column(6);
+            }
+        }
+        .field.optionset{
+            .form-group;
+            label{
+                // set col-sm-2 & col-md-2
+                .make-sm-column(2);
+                .make-md-column(2);
+                @media (max-width: @screen-sm-min) {  /* Small devices */
+                    padding-left: 0;
+                }
+                margin-bottom: 0;
+                padding-top: 3px;
+            }
+            .middleColumn{
+                // set col-sm-8 & col-md-8
+                .make-sm-column(8);
+                .make-md-column(8);
+                .checkbox;
+                padding-left: 0;
+                ul{
+                    li {
+                        // Make list vertical
+                        float: left;
+                        clear: left;
+                    }
+                    li > label{
+                        text-align: left;
+                        margin-bottom: 0;
+                        padding-left: inherit;
+                    }
+                } 
+            }
+        }
+        .Actions{
+            // shift button to right by two columns
+            .make-sm-column-offset(2);
+            .make-md-column-offset(2);
+        }
+    }
+}
+
+
+
+
+

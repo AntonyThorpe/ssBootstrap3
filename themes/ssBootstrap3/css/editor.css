@@ -185,62 +185,72 @@
 .typography .text-primary {
   color: #337ab7;
 }
-a.typography .text-primary:hover {
+a.typography .text-primary:hover,
+a.typography .text-primary:focus {
   color: #286090;
 }
 .typography .text-success {
   color: #3c763d;
 }
-a.typography .text-success:hover {
+a.typography .text-success:hover,
+a.typography .text-success:focus {
   color: #2b542c;
 }
 .typography .text-info {
   color: #31708f;
 }
-a.typography .text-info:hover {
+a.typography .text-info:hover,
+a.typography .text-info:focus {
   color: #245269;
 }
 .typography .text-warning {
   color: #8a6d3b;
 }
-a.typography .text-warning:hover {
+a.typography .text-warning:hover,
+a.typography .text-warning:focus {
   color: #66512c;
 }
 .typography .text-danger {
   color: #a94442;
 }
-a.typography .text-danger:hover {
+a.typography .text-danger:hover,
+a.typography .text-danger:focus {
   color: #843534;
 }
 .typography .bg-primary {
   color: #fff;
   background-color: #337ab7;
 }
-a.typography .bg-primary:hover {
+a.typography .bg-primary:hover,
+a.typography .bg-primary:focus {
   background-color: #286090;
 }
 .typography .bg-success {
   background-color: #dff0d8;
 }
-a.typography .bg-success:hover {
+a.typography .bg-success:hover,
+a.typography .bg-success:focus {
   background-color: #c1e2b3;
 }
 .typography .bg-info {
   background-color: #d9edf7;
 }
-a.typography .bg-info:hover {
+a.typography .bg-info:hover,
+a.typography .bg-info:focus {
   background-color: #afd9ee;
 }
 .typography .bg-warning {
   background-color: #fcf8e3;
 }
-a.typography .bg-warning:hover {
+a.typography .bg-warning:hover,
+a.typography .bg-warning:focus {
   background-color: #f7ecb5;
 }
 .typography .bg-danger {
   background-color: #f2dede;
 }
-a.typography .bg-danger:hover {
+a.typography .bg-danger:hover,
+a.typography .bg-danger:focus {
   background-color: #e4b9b9;
 }
 .typography .page-header {
@@ -1107,10 +1117,22 @@ a.typography .bg-danger:hover {
 .typography .glyphicon-bitcoin:before {
   content: "\e227";
 }
+.typography .glyphicon-btc:before {
+  content: "\e227";
+}
+.typography .glyphicon-xbt:before {
+  content: "\e227";
+}
 .typography .glyphicon-yen:before {
   content: "\00a5";
 }
+.typography .glyphicon-jpy:before {
+  content: "\00a5";
+}
 .typography .glyphicon-ruble:before {
+  content: "\20bd";
+}
+.typography .glyphicon-rub:before {
   content: "\20bd";
 }
 .typography .glyphicon-scale:before {
